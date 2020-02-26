@@ -21,6 +21,12 @@
   grid-area: image;
 }
 
+.pdp-image img {
+  grid-area: image;
+  max-width: 500px;
+  max-height: 523px;
+}
+
 .pdp-header {
   grid-area: header;
 }
