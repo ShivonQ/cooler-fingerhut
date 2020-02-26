@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
 import PDP from './pages/PDP'
 import PLP from './pages/PLP'
 import './App.css';

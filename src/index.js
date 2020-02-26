@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import PDP from './pages/PDP/PDP'
 import PLP from './pages/PLP'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
