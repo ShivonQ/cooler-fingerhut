@@ -27,6 +27,13 @@ const Header = () => {
           </Form>
           <Nav.Link href="#home">Login</Nav.Link>
           <Nav.Link href="#home">Cart</Nav.Link>
+          <div className="d-lg-none">
+            <Nav.Link href="/PLP/1">Sale</Nav.Link>
+            <Nav.Link href="/PLP/2">Women</Nav.Link>
+            <Nav.Link href="/PLP/3">Men</Nav.Link>
+            <Nav.Link href="/PLP/4">Home</Nav.Link>
+            <Nav.Link href="/PLP/5">Electronics</Nav.Link>
+          </div>
         </Navbar.Collapse>
       </Navbar>
     </div>)

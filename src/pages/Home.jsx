@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
   <div className="App">
-  <div className="text-center mt-2 mb-2">
+  <div className="text-center mt-2 mb-2 d-none d-md-none d-lg-block">
     <h2 className="d-inline mr-5"><a href="/PLP/1">SALE</a></h2>
     <h2 className="d-inline mr-5"><a href="/PLP/2">WOMEN</a></h2>
     <h2 className="d-inline mr-5"><a href="/PLP/3">MEN</a></h2>
