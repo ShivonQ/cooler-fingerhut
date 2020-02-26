@@ -26,6 +26,12 @@ const Home = () => {
       <img class="image-container" src="/images/Headphones.jpeg" alt="Third slide" />
     </div>
   </div>
+  <div className="">
+    <p>Apply Today, Buy Today</p>
+    <p>Build your credit history with us</p>
+    <p>Low monthly payments</p>
+    <p>Trusted brand names</p>
+  </div>
 </div>
 )
 
