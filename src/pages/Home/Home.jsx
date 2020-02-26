@@ -23,7 +23,7 @@ const Home = () => {
       <img class="image-container" src="https://s7d4.scene7.com/is/image/roomandboard/hartley_948499_18e1_g?hei=725&$str_g$" alt="Second slide" />
     </div>
     <div class="col-md-3 p-0 mb-2">
-      <img class="image-container" src="/images/Headphones.jpeg" alt="Third slide" />
+      <img class="image-container" src="https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" alt="Third slide" />
     </div>
   </div>
   <div className="credit-container">

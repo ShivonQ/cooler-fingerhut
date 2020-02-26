@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import PDP from './pages/PDP'
-import PLP from './pages/PLP'
+import PLP from './pages/PLP/PLP'
 import './App.css';
 
 function App({ match }) {
