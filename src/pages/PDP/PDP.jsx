@@ -11,9 +11,6 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
   const [product, setProduct] = useState({})
   const [productInCart, setProductInCart] = useState(false)
 
-  console.log('cart:', cart)
-  console.log('productInCart:', productInCart)
-
   const { name = "", category = "", image = "", price = 0, productDescription = "" } = product
 
   useEffect(() => {
