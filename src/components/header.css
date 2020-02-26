@@ -1,3 +1,11 @@
-.nav-margin {
+@media (min-width: 768px) {
+  .nav-margin {
     margin-top: 57px;
+  }
+}
+
+@media (max-width: 575.98px) {
+    .nav-margin {
+        margin-top: 78px;
+    }
 }
