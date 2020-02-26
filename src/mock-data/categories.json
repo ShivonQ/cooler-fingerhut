@@ -1,0 +1,64 @@
+{
+  "1": {
+    "id": "1",
+    "name": "Sale"
+  },
+  "2": {
+    "id": "2",
+    "name": "Women",
+    "subCategories": [
+      {
+        "name": "Shoes"
+      },
+      {
+        "name": "Clothing"
+      },
+      {
+        "name": "Handbags"
+      },
+      {
+        "name": "Accessories"
+      }
+    ]
+  },
+  "3": {
+    "id": "3",
+    "name": "Men"
+  },
+  "4": {
+    "id": "4",
+    "name": "Home"
+  },
+  "5": {
+    "id": "5",
+    "name": "Electronics",
+    "inspirations": [
+      {
+        "inspirationName": "TV",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg"
+      },
+      {
+        "inspirationName": "Smart Home",
+        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2"
+      },
+      {
+        "inspirationName": "Audio",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413"
+      }
+    ],
+    "subCategories": [
+      {
+        "name": "Tv"
+      },
+      {
+        "name": "Audio"
+      },
+      {
+        "name": "Smart Home"
+      },
+      {
+        "name": "Computers"
+      }
+    ]
+  }
+}

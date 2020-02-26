@@ -14,7 +14,7 @@ const Header = ({ cart }) => {
         <p className="text-light text-center d-sm-block d-md-none">free shipping on your order of $150 or more <br/> promo code <strong>CMQ69</strong></p>
       </div>
       <Navbar className="pt-0 pb-0 nav-margin" bg="light" expand="lg">
-        <Navbar.Brand href="#home"><img src="/logo.png" width={75} alt="Cooler Fingerhut"/> </Navbar.Brand>
+        <Navbar.Brand href="#home"><a href="/"><img src="/logo.png" width={75} alt="Cooler Fingerhut"/></a> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

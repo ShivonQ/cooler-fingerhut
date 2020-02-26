@@ -14,7 +14,7 @@ const Home = () => {
   </div>
   <div className="row ml-1 mr-1 mb-4">
     <div class="col-md-3 p-0">
-      <img class="image-container" src="/images/womens.png" alt="Womens" />
+      <img class="image-container" src="https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T49_1863_Y0_X_EC_1?$PDP_INT_IMAGEGRID_1_LG$" alt="Womens" />
     </div>
     <div class="col-md-3 p-0">
       <img class="image-container" src="/images/Mens.png" alt="Mens" />
@@ -23,14 +23,23 @@ const Home = () => {
       <img class="image-container" src="https://s7d4.scene7.com/is/image/roomandboard/hartley_948499_18e1_g?hei=725&$str_g$" alt="Second slide" />
     </div>
     <div class="col-md-3 p-0 mb-2">
-      <img class="image-container" src="/images/Headphones.jpeg" alt="Third slide" />
+      <img class="image-container" src="https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" alt="Third slide" />
     </div>
   </div>
-  <div className="">
-    <p>Apply Today, Buy Today</p>
-    <p>Build your credit history with us</p>
-    <p>Low monthly payments</p>
-    <p>Trusted brand names</p>
+  <div className="credit-container">
+    <h4>Apply Today, Buy Today</h4>
+    <div>
+      <img className="d-inline pr-1" width="20" src="images/checkmark.png" alt="credit"/>
+      <h5 className="d-inline">Build your credit history with us</h5>
+    </div>
+    <div>
+      <img className="d-inline pr-1" width="20" src="images/checkmark.png" alt="credit"/>
+      <h5 className="d-inline">Low monthly payments</h5>
+    </div>
+    <div>
+      <img className="d-inline pr-1" width="20" src="images/checkmark.png" alt="credit"/>
+      <h5 className="d-inline">Trusted brand names</h5>
+    </div>
   </div>
 </div>
 )

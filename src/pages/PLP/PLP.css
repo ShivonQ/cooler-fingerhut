@@ -1,0 +1,10 @@
+.plp-image-container {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.plp .card {
+    text-align: center;
+    height: 150px;
+}
