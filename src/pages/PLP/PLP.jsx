@@ -11,16 +11,16 @@ const PLP = ({ match }) => {
 
   const { inspirations, name, subCategories } = category
 
-  const inspirationDisplay = inspirations.map(inspiration => {
+  const inspirationDisplay = inspirations ? inspirations.map(inspiration => {
     const { image, inspirationName } = inspiration
     return (
       <div className="col-sm-4">
         <img className="plp-image-container" src={image} alt={inspirationName}/>
       </div>
     )
-  })
+  }) : []
 
-  const subCategoryDisplay = subCategories.map(subCategory => {
+  const subCategoryDisplay = subCategories ? subCategories.map(subCategory => {
     const { name } = subCategory
     return (
       <div className="col-sm-3">
@@ -29,7 +29,8 @@ const PLP = ({ match }) => {
         </div>
       </div>
     )
-  })
+  }) : []
+
   return (
     <div className="container plp">
       <h1 className="text-center mt-4 mb-3">{name}</h1>
