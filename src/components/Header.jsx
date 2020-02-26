@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div>
       <Navbar className="pt-0 pb-0" bg="light" expand="lg">
-        <Navbar.Brand href="#home"><img src="/logo.png" width={75}/> </Navbar.Brand>
+        <Navbar.Brand href="#home"><img src="/logo.png" width={75} alt="Cooler Fingerhut"/> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
