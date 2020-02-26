@@ -16,12 +16,12 @@ const App = () => {
 
   const [cart, setCart] = useState([])
 
-  const addToCart = (id) => {
-    if (cart.indexOf(id) < 0) setCart([...cart, id])
+  const addToCart = (item) => {
+    if (cart.indexOf(item) < 0) setCart([...cart, item])
   }
 
-  const removeFromCart = (id) => {
-    setCart(cart.filter(productId => productId !== id))
+  const removeFromCart = (item) => {
+    setCart(cart.filter(cartItem => cartItem.id !== item.id))
   }
 
   return (
