@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { string, object, func, arrayOf } from 'prop-types'
+import { object, func, arrayOf } from 'prop-types'
 import logo from '../../logo.svg';
 import api from '../../api/api'
 import './PDP.css'
@@ -11,7 +11,9 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
   const [product, setProduct] = useState({})
   const [productInCart, setProductInCart] = useState(false)
 
-  const { name = "", category = "", image = "", price = 0, productDescription = "" } = product
+  console.log('product:', productId)
+
+  const { name = "", category = "", image = "", price = 0, description = "" } = product
 
   useEffect(() => {
     const fetchedProduct = api.getProduct(productId)
@@ -19,7 +21,7 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
   }, [])
 
   useEffect(() => {
-    setProductInCart((cart.filter(item => item === product.id).length > 0))
+    setProductInCart((cart.filter(item => item.id == product.id).length > 0))
   }, [cart])
 
 
@@ -48,12 +50,12 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
         </tr>
         <tr>
           <th>Description</th>
-          <td>{productDescription}</td>
+          <td>{description}</td>
         </tr>
       </table>
     </div>
     <div className="pdp-add-to-cart mt-3">
-      <button disabled={productInCart} onClick={() => addToCart(product.id)} className="btn btn-primary float-right">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
+      <button disabled={productInCart} onClick={() => addToCart(product)} className="btn btn-primary float-right">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
     </div>
     </div>
   </div>
@@ -63,7 +65,7 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
 
 PDP.propTypes = {
   addToCart: func.isRequired,
-  cart: arrayOf(string),
+  cart: arrayOf(object),
   match: object.isRequired,
   removeFromCart: func.isRequired,
 }
