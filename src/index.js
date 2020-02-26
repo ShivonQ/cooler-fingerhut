@@ -31,7 +31,7 @@ const App = () => {
     <Route path={'/'} exact component={Home}/>
     <Route exact path={`/PDP/:productId`} render={(props) => <PDP {...props} addToCart={addToCart} removeFromCart={removeFromCart} cart={cart} />} />
     <Route component={PLP} exact path={`/PLP/:categoryId`} />
-    <Route component={Cart} exact path={`/cart`} />
+    <Route exact path={`/cart`} render={(props) => <Cart {...props} cart={cart} />} />
     <Footer/>
   </div>
   </Router>

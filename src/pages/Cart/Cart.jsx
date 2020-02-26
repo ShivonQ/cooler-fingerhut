@@ -1,14 +1,21 @@
 import React from 'react'
 import './Cart.css'
-const Home = () => {
+const Cart = ({ cart }) => {
 
   return (
-  <div className="App">
- this is the cart
-</div>
+    <div className="container">
+      <div className="cart-container">
+          {cart.map((item, index) => (
+            <div key={index}>
+              {JSON.stringify(item)}
+            </div>
+            )
+          )}
+      </div>
+    </div>
 )
 
 }
 
-export default Home
+export default Cart
 
