@@ -4,6 +4,7 @@ import './index.css';
 import Home from './pages/Home/Home';
 import PDP from './pages/PDP/PDP'
 import PLP from './pages/PLP'
+import Cart from './pages/Cart/Cart'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
@@ -15,13 +16,22 @@ const App = () => {
 
   const [cart, setCart] = useState([])
 
+  const addToCart = (id) => {
+    if (cart.indexOf(id) < 0) setCart([...cart, id])
+  }
+
+  const removeFromCart = (id) => {
+    setCart(cart.filter(productId => productId !== id))
+  }
+
   return (
     <Router>
   <div>
-    <Header />
+    <Header cart={cart} />
     <Route path={'/'} exact component={Home}/>
-    <Route component={PDP} exact  path={`/PDP/:productId`} />
+    <Route exact path={`/PDP/:productId`} render={(props) => <PDP {...props} addToCart={addToCart} removeFromCart={removeFromCart} cart={cart} />} />
     <Route component={PLP} exact path={`/PLP/:categoryId`} />
+    <Route component={Cart} exact path={`/cart`} />
     <Footer/>
   </div>
   </Router>
