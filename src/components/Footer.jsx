@@ -10,7 +10,6 @@ const Footer = () => {
             <h4>
               <strong className="text-light">About Fingerhut</strong>
             </h4>
-
               <ul className="list-unstyled">
                 <li><a className="text-light" href="#">About Us</a></li>
                 <li><a className="text-light" href="#">Careers</a></li>
@@ -22,14 +21,12 @@ const Footer = () => {
                 <li><a className="text-light" href="#">Sweepstakes Rules</a></li>
                 <li><a className="text-light" href="#">California Transparency in Supply Chains Act</a></li>
               </ul>
-
           </div>
 
           <div className="col-sm-4 col-md-3">
             <h4>
               <strong className="text-light">Customer Service</strong>
             </h4>
-
               <ul className="list-unstyled">
                 <li><a className="text-light" href="#">Contact Us</a></li>
                 <li><a className="text-light" href="#">FAQs</a></li>
