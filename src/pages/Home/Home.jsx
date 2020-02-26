@@ -26,11 +26,20 @@ const Home = () => {
       <img class="image-container" src="/images/Headphones.jpeg" alt="Third slide" />
     </div>
   </div>
-  <div className="">
-    <p>Apply Today, Buy Today</p>
-    <p>Build your credit history with us</p>
-    <p>Low monthly payments</p>
-    <p>Trusted brand names</p>
+  <div className="credit-container">
+    <h4>Apply Today, Buy Today</h4>
+    <div>
+      <img className="d-inline pr-1" width="20" src="images/checkmark.png" alt="credit"/>
+      <h5 className="d-inline">Build your credit history with us</h5>
+    </div>
+    <div>
+      <img className="d-inline pr-1" width="20" src="images/checkmark.png" alt="credit"/>
+      <h5 className="d-inline">Low monthly payments</h5>
+    </div>
+    <div>
+      <img className="d-inline pr-1" width="20" src="images/checkmark.png" alt="credit"/>
+      <h5 className="d-inline">Trusted brand names</h5>
+    </div>
   </div>
 </div>
 )
