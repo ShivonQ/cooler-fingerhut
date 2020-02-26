@@ -7,8 +7,9 @@ const Header = () => {
 
   return (
     <div>
-      <div className="bg-dark pt-3 pb-1">
-        <p className="text-light text-center">free shipping on your order of $150 or more | promo code <strong>CMQ69</strong></p>
+      <div className="bg-dark pt-3 pb-1 fixed-top">
+        <p className="text-light text-center d-md-block d-sm-none d-none">free shipping on your order of $150 or more | promo code <strong>CMQ69</strong></p>
+        <p className="text-light text-center d-sm-block d-md-none">free shipping on your order of $150 or more <br/> promo code <strong>CMQ69</strong></p>
       </div>
       <Navbar className="pt-0 pb-0" bg="light" expand="lg">
         <Navbar.Brand href="#home"><img src="/logo.png" width={75} alt="Cooler Fingerhut"/> </Navbar.Brand>
@@ -19,8 +20,8 @@ const Header = () => {
           <Form inline>
           <InputGroup className="mr-sm-2">
             <FormControl
-              placeholder="Username"
-              aria-label="Username"
+              placeholder="Search"
+              aria-label="Search"
               aria-describedby="basic-addon1"
             />
             <InputGroup.Prepend>
