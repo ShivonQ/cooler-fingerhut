@@ -5,5 +5,13 @@
       "image": ["image"],
       "price": "price",
       "product description": "description"
+    },
+    
+    {
+      "name": "name",
+      "category": ["Womens"],
+      "image": ["image"],
+      "price": "price",
+      "product description": "description"
     }
   ]
