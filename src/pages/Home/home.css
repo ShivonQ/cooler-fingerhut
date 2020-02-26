@@ -6,3 +6,7 @@
 .credit-container {
     padding: 10px;
 }
+
+.align-vertical {
+    vertical-align: center;
+}
