@@ -12,16 +12,22 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+import localStorageUtil from './util/localStorageUtil'
+
 const App = () => {
 
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(localStorageUtil.get('cart') || [])
 
   const addToCart = (item) => {
+    const localCart = localStorageUtil.get('cart') || []
+
+    if (localCart.indexOf(item) < 0) localStorageUtil.set('cart', [...cart, item])
     if (cart.indexOf(item) < 0) setCart([...cart, item])
   }
 
   const removeFromCart = (item) => {
-    setCart(cart.filter(cartItem => cartItem.id !== item.id))
+    localStorageUtil.set('cart', cart.filter(cartItem => cartItem.id != item.id))
+    setCart(cart.filter(cartItem => cartItem.id != item.id))
   }
 
   return (
@@ -31,7 +37,7 @@ const App = () => {
     <Route path={'/'} exact component={Home}/>
     <Route exact path={`/PDP/:productId`} render={(props) => <PDP {...props} addToCart={addToCart} removeFromCart={removeFromCart} cart={cart} />} />
     <Route component={PLP} exact path={`/PLP/:categoryId`} />
-    <Route exact path={`/cart`} render={(props) => <Cart {...props} cart={cart} />} />
+    <Route exact path={`/cart`} render={(props) => <Cart {...props} removeFromCart={removeFromCart} cart={cart} />} />
     <Footer/>
   </div>
   </Router>

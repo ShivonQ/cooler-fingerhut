@@ -11,7 +11,9 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
   const [product, setProduct] = useState({})
   const [productInCart, setProductInCart] = useState(false)
 
-  const { name = "", category = "", image = "", price = 0, productDescription = "" } = product
+  console.log('product:', productId)
+
+  const { name = "", category = "", image = "", price = 0, description = "" } = product
 
   useEffect(() => {
     const fetchedProduct = api.getProduct(productId)
@@ -19,7 +21,7 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
   }, [])
 
   useEffect(() => {
-    setProductInCart((cart.filter(item => item.id === product.id).length > 0))
+    setProductInCart((cart.filter(item => item.id == product.id).length > 0))
   }, [cart])
 
 
@@ -48,7 +50,7 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
         </tr>
         <tr>
           <th>Description</th>
-          <td>{productDescription}</td>
+          <td>{description}</td>
         </tr>
       </table>
     </div>
