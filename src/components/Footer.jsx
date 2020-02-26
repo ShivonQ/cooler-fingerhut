@@ -55,7 +55,7 @@ const Footer = () => {
                 <li><a className="text-light" href="#">My Account</a></li>
                 <li><a className="text-light" href="http://ats.eccmp.com/ats/show.aspx?cr=571&amp;fm=21" title="Download the Mobile App!"
                    data-track-id="globalFooter_link" data-track-value="Download Mobile App">
-                  <img alt="" src="//s7d5.scene7.com/is/image/bluestembrands/app_icon_footer?scl=1&amp;fmt=png" />
+                  <img alt="" src="https://www.fingerhut.com/assets/f/app_icon_footer.png" />
                     <br />
                       Download the Mobile App
                 </a></li>
