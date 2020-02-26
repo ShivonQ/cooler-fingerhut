@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Form, FormControl, InputGroup, Nav, Navbar } from 'react-bootstrap'
 
-const Home = () => {
+const Header = () => {
 
   return (
     <div>
@@ -33,5 +33,5 @@ const Home = () => {
 
 }
 
-export default Home
+export default Header
 
