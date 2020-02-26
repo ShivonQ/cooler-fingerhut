@@ -1,13 +1,13 @@
 import React from 'react'
 import logo from '../logo.svg';
 
-const PDP = () => {
+const PLP = () => {
 
   return (<div className="App">
   <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
     <p>
-This is the PDP
+      This is the PLP.
     </p>
     <a
       className="App-link"
@@ -23,5 +23,5 @@ This is the PDP
 
 }
 
-export default PDP
+export default PLP
 
