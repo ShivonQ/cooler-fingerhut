@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/Home';
@@ -11,8 +11,12 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+const App = () => {
 
-ReactDOM.render(<Router>
+  const [cart, setCart] = useState([])
+
+  return (
+    <Router>
   <div>
     <Header />
     <Route path={'/'} exact component={Home}/>
@@ -20,7 +24,14 @@ ReactDOM.render(<Router>
     <Route component={PLP} exact path={`/PLP/:categoryId`} />
     <Footer/>
   </div>
-  </Router>, document.getElementById('root'));
+  </Router>
+  )
+
+
+}
+
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
