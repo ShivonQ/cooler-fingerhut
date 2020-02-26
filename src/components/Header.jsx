@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Form, FormControl, InputGroup, Nav, Navbar } from 'react-bootstrap'
 
-const Header = () => {
+const Header = ({ cart }) => {
 
   return (
     <div>
@@ -29,7 +29,7 @@ const Header = () => {
           </InputGroup>
           </Form>
           <Nav.Link href="#home">Login</Nav.Link>
-          <Nav.Link href="#home">Cart</Nav.Link>
+          <Nav.Link href="#home">Cart{(cart.length > 0 && <span>&nbsp;&#40;{cart.length}&#41;</span>)}</Nav.Link>
           <div className="d-lg-none">
             <Nav.Link href="/PLP/1">Sale</Nav.Link>
             <Nav.Link href="/PLP/2">Women</Nav.Link>
