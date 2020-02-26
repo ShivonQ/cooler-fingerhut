@@ -19,7 +19,7 @@ const Header = ({ cart }) => {
           <Form inline>
           <InputGroup className="mr-sm-2">
             <FormControl
-              placeholder="Username"
+              placeholder="Search Products"
               aria-label="Username"
               aria-describedby="basic-addon1"
             />
