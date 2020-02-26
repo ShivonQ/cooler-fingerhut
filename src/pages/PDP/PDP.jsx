@@ -1,34 +1,41 @@
 import React, { useEffect, useState } from 'react'
+import { string, object, func, arrayOf } from 'prop-types'
 import logo from '../../logo.svg';
 import api from '../../api/api'
 import './PDP.css'
 
-const PDP = ({ match }) => {
+const PDP = ({ match, cart, addToCart, removeFromCart }) => {
 
   const { params } = match
   const { productId } = params
-  console.log('productId:', productId)
   const [product, setProduct] = useState({})
+  const [productInCart, setProductInCart] = useState(false)
+
+  console.log('cart:', cart)
+  console.log('productInCart:', productInCart)
 
   const { name = "", category = "", image = "", price = 0, productDescription = "" } = product
 
-
   useEffect(() => {
-    setProduct(api.getProduct(productId))
+    const fetchedProduct = api.getProduct(productId)
+    setProduct(fetchedProduct)
   }, [])
 
-  console.log('product:', product)
+  useEffect(() => {
+    setProductInCart((cart.filter(item => item === product.id).length > 0))
+  }, [cart])
+
 
   return (
   <div className="container">
     <div className="pdp-container">
-      <div>
-        <h1 className="pdp-header">{name}</h1>
+      <div className="pdp-header">
+        <h1>{name}</h1>
       </div>
     <div className="pdp-image">
         <img src={image} alt="product image" />
     </div>
-    <div className="pdp-details">
+    <div className="pdp-details primary">
       <div>
         Name: {name}
       </div>
@@ -41,11 +48,28 @@ const PDP = ({ match }) => {
       <div>
         Description: {productDescription}
       </div>
+      <div>
+        item in cart: {productInCart}
+      </div>
+    </div>
+    <div className="pdp-add-to-cart mt-3">
+      <button disabled={productInCart} onClick={() => addToCart(product.id)} className="btn btn-primary float-right">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
     </div>
     </div>
   </div>
 )
 
+}
+
+PDP.propTypes = {
+  addToCart: func.isRequired,
+  cart: arrayOf(string),
+  match: object.isRequired,
+  removeFromCart: func.isRequired,
+}
+
+PDP.defaultProps = {
+  cart: [],
 }
 
 export default PDP

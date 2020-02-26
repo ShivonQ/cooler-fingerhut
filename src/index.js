@@ -15,12 +15,20 @@ const App = () => {
 
   const [cart, setCart] = useState([])
 
+  const addToCart = (id) => {
+    if (cart.indexOf(id) < 0) setCart([...cart, id])
+  }
+
+  const removeFromCart = (id) => {
+    setCart(cart.filter(productId => productId !== id))
+  }
+
   return (
     <Router>
   <div>
     <Header />
     <Route path={'/'} exact component={Home}/>
-    <Route component={PDP} exact  path={`/PDP/:productId`} />
+    <Route exact path={`/PDP/:productId`} render={(props) => <PDP {...props} addToCart={addToCart} removeFromCart={removeFromCart} cart={cart} />} />
     <Route component={PLP} exact path={`/PLP/:categoryId`} />
     <Footer/>
   </div>
