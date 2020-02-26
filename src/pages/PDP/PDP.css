@@ -1,0 +1,23 @@
+.pdp-container {
+  display: grid;
+  grid-template-areas: "header header header"
+                       "image details details"
+                       "image details details"
+  ;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.pdp-details {
+  grid-area: details;
+}
+
+.pdp-image {
+  grid-area: image;
+}
+
+.pdp-header {
+  grid-area: header;
+}
