@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Form, FormControl, InputGroup, Nav, Navbar } from 'react-bootstrap'
 
-const Home = () => {
+const Header = () => {
 
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Icon</Navbar.Brand>
+      <Navbar className="pt-0 pb-0" bg="light" expand="lg">
+        <Navbar.Brand href="#home"><img src="/logo.png" width={75}/> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -27,11 +27,18 @@ const Home = () => {
           </Form>
           <Nav.Link href="#home">Login</Nav.Link>
           <Nav.Link href="#home">Cart</Nav.Link>
+          <div className="d-lg-none">
+            <Nav.Link href="/PLP/1">Sale</Nav.Link>
+            <Nav.Link href="/PLP/2">Women</Nav.Link>
+            <Nav.Link href="/PLP/3">Men</Nav.Link>
+            <Nav.Link href="/PLP/4">Home</Nav.Link>
+            <Nav.Link href="/PLP/5">Electronics</Nav.Link>
+          </div>
         </Navbar.Collapse>
       </Navbar>
     </div>)
 
 }
 
-export default Home
+export default Header
 

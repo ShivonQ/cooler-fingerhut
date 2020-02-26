@@ -1,23 +1,29 @@
 import React from 'react'
-import logo from '../logo.svg';
+import Header from '../components/Header'
 
 const Home = () => {
 
-  return (<div className="App">
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-      Edit <code>src/App.js</code> and save to reload.
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Learn React
-    </a>
-  </header>
+  return (
+  <div className="App">
+  <div className="text-center mt-2 mb-2 d-none d-md-none d-lg-block">
+    <h2 className="d-inline mr-5"><a href="/PLP/1">SALE</a></h2>
+    <h2 className="d-inline mr-5"><a href="/PLP/2">WOMEN</a></h2>
+    <h2 className="d-inline mr-5"><a href="/PLP/3">MEN</a></h2>
+    <h2 className="d-inline mr-5"><a href="/PLP/4">HOME</a></h2>
+    <h2 className="d-inline mr-5"><a href="/PLP/5">ELECTRONICS</a></h2>
+  </div>
+    <div>
+      <img class="d-block w-100" src="https://files.slack.com/files-pri/T0AEY0UDP-FUJGLBC9K/image.png" alt="Womens" />
+    </div>
+    <div>
+      <img class="d-block w-100" src="https://files.slack.com/files-pri/T0AEY0UDP-FU86MDKS5/mens.png" alt="Mens" />
+    </div>
+    <div>
+      <img class="d-block w-100" src="https://s7d4.scene7.com/is/image/roomandboard/hartley_948499_18e1_g?hei=725&$str_g$" alt="Second slide" />
+    </div>
+    <div>
+      <img class="d-block w-100" src="https://files.slack.com/files-pri/T0AEY0UDP-FUJFX89PA/headphones.jpeg" alt="Third slide" />
+    </div>
 </div>
 )
 

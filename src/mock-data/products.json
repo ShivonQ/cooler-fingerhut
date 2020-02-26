@@ -1,9 +1,19 @@
 [
     {
+      "name": "Cute Cat",
+      "category": ["Womens"],
+      "price": "price",
+      "productDescription": "description",
+      "id": "1",
+      "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    
+    {
       "name": "name",
       "category": ["Womens"],
-      "image": ["image"],
       "price": "price",
-      "product description": "description"
+      "productDescription": "description",
+      "id": "2",
+      "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/cats_and_excessive_meowing_ref_guide/1800x1200_cats_and_excessive_meowing_ref_guide.jpg"
     }
   ]

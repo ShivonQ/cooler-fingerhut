@@ -2,19 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/Home';
-import PDP from './pages/PDP'
+import PDP from './pages/PDP/PDP'
 import PLP from './pages/PLP'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import "bootswatch/dist/lux/bootstrap.min.css"; 
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 ReactDOM.render(<Router>
   <div>
+    <Header />
     <Route path={'/'} exact component={Home}/>
     <Route component={PDP} exact  path={`/PDP/:productId`} />
     <Route component={PLP} exact path={`/PLP/:categoryId`} />
+    <Footer/>
   </div>
   </Router>, document.getElementById('root'));
 
