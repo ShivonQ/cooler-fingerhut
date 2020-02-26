@@ -3,7 +3,9 @@
   grid-template-areas: "header header header"
                        "image details details"
                        "image details details"
+                       "addToCart addToCart addToCart"
   ;
+  grid-template-columns: 550px 1fr 1fr;
 
   margin-top: 50px;
   margin-bottom: 50px;
@@ -12,6 +14,7 @@
 
 .pdp-details {
   grid-area: details;
+  background-color: #F8F8F8;
 }
 
 .pdp-image {
@@ -20,4 +23,8 @@
 
 .pdp-header {
   grid-area: header;
+}
+
+.pdp-add-to-cart {
+  grid-area: addToCart;
 }
