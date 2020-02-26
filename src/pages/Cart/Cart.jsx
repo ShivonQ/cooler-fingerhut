@@ -3,17 +3,16 @@ import './Cart.css'
 const Cart = ({ cart }) => {
 
   return (
-  <div className="cart-container">
-    {cart.map((item, index) => (
-      <div key={index}>
-        {JSON.stringify(item)}
+    <div className="container">
+      <div className="cart-container">
+          {cart.map((item, index) => (
+            <div key={index}>
+              {JSON.stringify(item)}
+            </div>
+            )
+          )}
       </div>
-      )
-    )}
-    <div>
-
     </div>
-  </div>
 )
 
 }

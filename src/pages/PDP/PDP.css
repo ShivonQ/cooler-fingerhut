@@ -28,3 +28,36 @@
 .pdp-add-to-cart {
   grid-area: addToCart;
 }
+
+.pdp-table {
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 20px;
+}
+
+.pdp-table th {
+  border: 1px solid rgb(169, 169, 169, .2); 
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+}
+.pdp-table td {
+  border: 1px solid rgb(169, 169, 169, .2); 
+  padding: 5px 5px 5px 20px;
+  width: 200px;
+  height: 50px;
+}
+
+.pdp-table tr:first-child td, .pdp-table tr:first-child th {
+  border-top: 0;
+}
+.pdp-table tr td:first-child, .pdp-table tr th:first-child {
+  border-left: 0;
+}
+.pdp-table tr:last-child td, .pdp-table tr:last-child th {
+  border-bottom: 0;
+}
+.pdp-table tr td:last-child, .pdp-table tr th:last-child {
+  border-right: 0;
+}

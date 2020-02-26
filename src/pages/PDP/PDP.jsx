@@ -33,21 +33,24 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
         <img src={image} alt="product image" />
     </div>
     <div className="pdp-details primary">
-      <div>
-        Name: {name}
-      </div>
-      <div>
-        Category: {category}
-      </div>
-      <div>
-        Price: {price}
-      </div>
-      <div>
-        Description: {productDescription}
-      </div>
-      <div>
-        item in cart: {productInCart}
-      </div>
+      <table className="pdp-table">
+        <tr>
+          <th>Name</th>
+          <td>{name}</td>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <td>{category}</td>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <td>{price}</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>{productDescription}</td>
+        </tr>
+      </table>
     </div>
     <div className="pdp-add-to-cart mt-3">
       <button disabled={productInCart} onClick={() => addToCart(product.id)} className="btn btn-primary float-right">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
