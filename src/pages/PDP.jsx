@@ -1,24 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../logo.svg';
+import api from '../api/api'
 
-const PDP = () => {
+const PDP = ({ match }) => {
 
-  return (<div className="App">
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-This is the PDP
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Learn React
-    </a>
-  </header>
-</div>
+  const { params } = match
+  const { productId } = params
+  console.log('productId:', productId)
+  const [product, setProduct] = useState(null)
+
+
+  useEffect(() => {
+    setProduct(api.getProduct(productId))
+  }, [])
+
+  console.log('product:', product)
+
+  return (
+  <div className="App">
+    <h1>PDP</h1>
+    <div>
+      {JSON.stringify(product)}
+    </div>
+  </div>
 )
 
 }

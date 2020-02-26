@@ -4,6 +4,15 @@
       "category": ["Womens"],
       "image": ["image"],
       "price": "price",
-      "product description": "description"
+      "product description": "description",
+      "id": "1"
+    },
+    {
+      "name": "name",
+      "category": ["Womens"],
+      "image": ["image"],
+      "price": "price",
+      "product description": "product 2",
+      "id": "2"
     }
   ]
