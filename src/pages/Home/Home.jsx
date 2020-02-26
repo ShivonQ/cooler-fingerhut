@@ -14,7 +14,7 @@ const Home = () => {
   </div>
   <div className="row ml-1 mr-1 mb-4">
     <div class="col-md-3 p-0">
-      <img class="image-container" src="/images/womens.png" alt="Womens" />
+      <img class="image-container" src="https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T49_1863_Y0_X_EC_1?$PDP_INT_IMAGEGRID_1_LG$" alt="Womens" />
     </div>
     <div class="col-md-3 p-0">
       <img class="image-container" src="/images/Mens.png" alt="Mens" />

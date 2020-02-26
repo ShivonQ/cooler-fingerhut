@@ -1,19 +1,232 @@
 [
-    {
-      "name": "Cute Cat",
-      "category": ["Womens"],
-      "price": "price",
-      "productDescription": "description",
-      "id": "1",
-      "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    },
-    
-    {
-      "name": "name",
-      "category": ["Womens"],
-      "price": "price",
-      "productDescription": "description",
-      "id": "2",
-      "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/cats_and_excessive_meowing_ref_guide/1800x1200_cats_and_excessive_meowing_ref_guide.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Cute Cat",
+    "description": "Cats are super duper cute.",
+    "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "category": ["kitten"],
+    "price": 1,
+    "ppm": 1,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 2,
+    "name": "Civil Society Men's Connor Knit Blazer – Navy",
+    "description": "Men's regular sizes. Cotton/polyester. Dry clean. Wrinkle-free knit fabric",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPJP5BNVMNGM_C_999?scl=1",
+    "category": ["mens-tops", "inspiration-mens-1"],
+    "price": 53.97,
+    "ppm": 8.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 3,
+    "name": "Galaxy by Harvic Men's Slim-Fit Belted Dress Pant",
+    "description": "Men's regular sizes. Polyester/rayon. Machine wash. Slim Fit.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPGRWBNVP300_VA_999?$Quickview$&hei=357&wid=357",
+    "category": ["mens-pants", "inspiration-mens-1"],
+    "price": 34.99,
+    "ppm": 7.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 4,
+    "name": "Cole Haan Men's Grandpro Rally Laser-Cut Sneaker",
+    "description": "Leather upper with laser-cut details. Leather lining. Rubber outsole. OrthoLite antimicrobial insole. GRANDFOAM cushioning",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NQI23NWHS080_VA_999?scl=1",
+    "category": ["mens-shoes", "inspiration-mens-1"],
+    "price": 164.99,
+    "ppm": 15.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 5,
+    "name": "adidas Men's Team Issue Zippered Hoodie",
+    "description": "Addidas. Sweatshirts & Hoodies. Collegiate Royal/White.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPRJYNGLA2XL_VB_999?scl=1",
+    "category": ["mens-tops", "inspiration-mens-1"],
+    "price": 72.99,
+    "ppm": 9.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 6,
+    "name": "Jachs Men's Tropical-Print Poplin Short-Sleeved Shirt – Dark",
+    "description": "Men's regular sizes. Peached poplin fabric. Front button closure",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPU2OBDRAXLG_A_999?scl=1",
+    "category": ["mens-tops", "inspiration-mens-2"],
+    "price": 39.99,
+    "ppm": 11.97,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 7,
+    "name": "Dockers Men's Ultimate Short",
+    "description": "Men's regular sizes. Supreme Flex. On-seam pockets",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NP81RNGRS300_VC_999?$Quickview$&hei=357&wid=357",
+    "category": ["mens-pants", "inspiration-mens-2"],
+    "price": 29.99,
+    "ppm": 7.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 8,
+    "name": "Ray-Ban Unisex RB3016 Clubmaster Sunglasses",
+    "description": "Metal frames. UV protection. Includes case and cloth",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPU2VNKE0010_VA_999?scl=1",
+    "category": ["mens-accesories", "inspiration-mens-2"],
+    "price": 175.0,
+    "ppm": 15.99,
+    "size": []
+  },
+  {
+    "id": 9,
+    "name": "PUMA Men's Ember TRL Trail Running Shoe",
+    "description": "Mesh and synthetic upper. Synthetic lining. Rubber lug outsole for traction. Sculpted foam cushioned midsole",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NQIJ3NBLS075_VA_999?scl=1",
+    "category": ["mens-shoes", "inspiration-mens-3"],
+    "price": 83.9,
+    "ppm": 9.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 10,
+    "name": "Timberland Men's Hooded Windbreaker Jacket",
+    "description": "Wind and weather resistant. Ripstop fabric. Attached hood with drawcord adjustment. Elasticized cuffs",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPXH3BWHA3XL_A_999?scl=1",
+    "category": ["mens-tops", "inspiration-mens-3"],
+    "price": 97.99,
+    "ppm": 11.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 11,
+    "name": "PUMA Men's Rebel Jogger Pant – Limestone",
+    "description": "Cotton/polyester French terry. Machine wash. Regular fit. Elasticized waistband with internal drawcord",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPF3SNGRAXLG_VA_999?scl=1",
+    "category": ["mens-pants", "inspiration-mens-3"],
+    "price": 24.97,
+    "ppm": 7.99,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 12,
+    "name": "___",
+    "description": "___",
+    "image": "___",
+    "category": ["___"],
+    "price": 1,
+    "ppm": 1,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 13,
+    "name": "___",
+    "description": "___",
+    "image": "___",
+    "category": ["___"],
+    "price": 1,
+    "ppm": 1,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 14,
+    "name": "___",
+    "description": "___",
+    "image": "___",
+    "category": ["___"],
+    "price": 1,
+    "ppm": 1,
+    "size": ["small", "medium", "large"]
+  },
+  {
+    "id": 15,
+    "name": "Samsung 65\" Curved UHD 4K HDR LED Smart TV - UN65RU7300F",
+    "description": "All the game-changing clarity of 4K, with an elegant twist. The beautiful curved screen upscales all of your favorite content to superior 4K quality. The natural flow of the TV's curve and surprisingly slim bezel brings a new level of sophistication to TV design. Samsung UHD TV works with your smart home device so your life just got simpler. It's easy to connect your Alexa or Google enabled devices. With Samsung UHD TV's compatibility, have your smart device turn on your TV, change channels, control volume and more.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NP0VN0000010_VA_999?scl=1",
+    "category": ["elec-tv", "insipration-elec-1"],
+    "price": 1199.99,
+    "ppm": 69.99,
+    "size": []
+  },
+  {
+    "id": 16,
+    "name": "Samsung 35.7\" 2.1-Channel Bluetooth Soundbar with Wireless Subwoofer - Charcoal Black, HW-R450",
+    "description": "The R450 soundbar is optimized to work seamlessly with Samsung TVs. Enjoy plug-and-play connectivity via wired or wireless connections, control both TV and soundbar with the Samsung OneRemote, and fine-tune your sound right from the TV menu. Go beyond what you see, and experience more powerful sound with clear tones and deep bass. Pairs seamlessly with your Samsung TV. Feel the subtle rumble of distant thunder and earth-shattering sounds as they pound the air around you with the powerful included wireless subwoofer.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NP2LQ0000010_VB_999?scl=1",
+    "category": ["elec-audio", "insipration-elec-1"],
+    "price": 259.99,
+    "ppm": 21.99,
+    "size": []
+  },
+  {
+    "id": 17,
+    "name": "Sony PS4 Pro 1TB Console",
+    "description": "PS4 Pro gets you closer to your game,Explore vivid game worlds with rich visuals heightened by PS4 Pro",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NLS790000010_VA_999?scl=1",
+    "category": ["elec-computers", "inspiration-elec-1"],
+    "price": 529.99,
+    "ppm": 46.99,
+    "size": []
+  },
+  {
+    "id": 18,
+    "name": "Nest x Yale Lock - Polished Brass, RB-YRD540-WV-605",
+    "description": "This secure, tamper-proof, key-free deadbolt connects to the Nest app. You can lock and unlock your door from anywhere. Give pass codes to guests. Lock and check your door status with your voice using the Google Assistant. And get alerts whenever someone comes and goes.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPXPV0000010_VA_999?scl=1",
+    "category": ["elec-smart-home", "inspiration-elec-2"],
+    "price": 399.99,
+    "ppm": 30.99,
+    "size": []
+  },
+  {
+    "id": 19,
+    "name": "Nest Learning Thermostat 3rd Generation - White, T3017US",
+    "description": "The Nest Learning Thermostat programs itself to help save energy. It learns what temperature you like and builds a schedule around yours. You can control it from anywhere with the Nest app.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPXPW0000010_VA_999?scl=1",
+    "category": ["elec-smart-home", "inspiration-elec-2"],
+    "price": 349.99,
+    "ppm": 30.99,
+    "size": []
+  },
+  {
+    "id": 20,
+    "name": "Nest Cam IQ outdoor - White, NC4100US",
+    "description": "The Nest Cam IQ outdoor security camera is a powerhouse of brains and brawn. Its weatherproof and tamper-resistant to help you know about a break-in before it happens.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NP2ML0000010_VA_999?scl=1",
+    "category": ["elec-smart-home", "inspiration-elec-2"],
+    "price": 549.99,
+    "ppm": 46.99,
+    "size": []
+  },
+  {
+    "id": 21,
+    "name": "JBL Bluetooth Around-Ear Headphones - Black, LIVE500BTBLKAM",
+    "description": "In your world, superior sound is essential, so slip on a pair of JBL LIVE500BT wireless around-ear headphones. Equipped with massive 50mm drivers, JBL LIVE500BT headphones deliver JBL Signature Sound punctuated with enhanced bass so every track on every playlist pops. Easily access the Google Assistant or Amazon Alexa with a tap on the ear cup and play your favorite playlist, text your friend or check the weather and much more, without glancing at your phone.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPWNSNBL0010_VA_999?scl=1",
+    "category": ["elec-audio", "inspiration-elec-3"],
+    "price": 179.99,
+    "ppm": 15.99,
+    "size": []
+  },
+  {
+    "id": 22,
+    "name": "AVGO 5-in-1 Sound System",
+    "description": "Our exclusive AVGO™ line of easy-to-use electronics brings fun family entertainment and dependable office essentials into your home. With the same great features as top national brands, AVGO electronics also offer the reliability and value you're sure to appreciate. Play your whole music collection on this versatile 5-in‑1 sound system.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NQ2890000010_VA_999?scl=1",
+    "category": ["elec-audio", "inspiration-elec-3"],
+    "price": 189.99,
+    "ppm": 18.99,
+    "size": []
+  },
+  {
+    "id": 23,
+    "name": "Apple AirPods Gen 2 Wireless Headphones with Wired Charging Case - White, MV7N2AM/A",
+    "description": "AirPods deliver the wireless headphone experience, reimagined. Just pull them out of the charging case and they're ready to use with your iPhone, Apple Watch, iPad, or Mac. After a simple one-tap setup, AirPods work like magic. They're automatically on and always connected. AirPods can even sense when they're in your ears and pause when you take them out.",
+    "image": "https://a248.e.akamai.net/f/248/9086/10h/origin-d5.scene7.com/is/image/bluestembrands/4NPYSC0000010_VA_999?scl=1",
+    "category": ["elec-audio", "inspiration-elec-3"],
+    "price": 289.99,
+    "ppm": 24.99,
+    "size": []
+  }
+]
