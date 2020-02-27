@@ -5,6 +5,7 @@
   },
   "2": {
     "id": "2",
+    "inspirationText": "Shop by Look",
     "title": "Women",
     "subCategories": [
       {
@@ -27,23 +28,24 @@
     "inspirations": [
       {
         "inspirationTitle": "TV",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg",
+        "image": "https://c.static-nike.com/a/images/f_auto/dpr_2.0/w_1568,c_limit/4d7d302e-14cc-49eb-8f45-8b9e2dd98ee3/women.jpg",
         "name": "inspiration-womens-1"
       },
       {
         "inspirationTitle": "Smart Home",
-        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2",
+        "image": "https://www.drygoodsusa.com/Images/Page/Home/G30_GI163_20200221081712_1x.jpg",
         "name": "inspiration-womens-2"
       },
       {
         "inspirationTitle": "Audio",
-        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413",
+        "image": "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T49_1863_Y0_X_EC_1?$PDP_INT_IMAGEGRID_1_LG$",
         "name": "inspiration-womens-3"
       }
     ]
   },
   "3": {
     "id": "3",
+    "inspirationText": "Shop by Look",
     "title": "Men",
     "subCategories": [
       {
@@ -83,6 +85,7 @@
   },
   "4": {
     "id": "4",
+    "inspirationText": "Shop by Inspirations",
     "title": "Home",
     "subCategories": [
       {
@@ -122,6 +125,7 @@
   },
   "5": {
     "id": "5",
+    "inspirationText": "Shop by Inspirations",
     "title": "Electronics",
     "inspirations": [
       {
