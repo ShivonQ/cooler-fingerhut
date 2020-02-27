@@ -171,6 +171,10 @@
   .pdp-size {
     margin-left: 22px;
   }
+  .pdp-size button {
+    margin-left: 22px;
+    background-color: white;
+  }
   .pdp-quantity{
     margin-left: 22px;
   }
