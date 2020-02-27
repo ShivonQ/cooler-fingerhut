@@ -1,6 +1,5 @@
 import React from "react";
-import './CreditApplication.css'
-import { Checkbox } from "react-bootstrap";
+import "./CreditApplication.css";
 
 const CreditApplication = () => {
   return (
@@ -34,7 +33,27 @@ const CreditApplication = () => {
         <input className="col-sm-8"></input>
         <label className="col-sm-12">Secondary Phone</label>
         <input className="col-sm-8"></input>
-        <p><strong>Consent to Use of Telephone Numbers:</strong> You authorize WebBank, Fingerhut, their affiliates, agents, and others calling at their request or on their behalf to contact you at any number (i) you have provided to us (ii) from which you have called us, or (iii) which we obtain and believe we can reach you at. We may contact you in any way, such as calling, texting, using an automated dialer or using pre-recorded messages. We may contact you on a mobile, wireless, or similar device, even if you are charged for it by your provider. Informational Text Message Disclosures: Fingerhut Account Alerts. Message and data rates may apply. Up to 8 msgs/mo from 40537. Reply STOP to 40537 to cancel. Reply HELP to 40537 for help. Call 1-800-208-2500 for support. More Information: See our <a className="text-info" href="/">Privacy></a> Policy and <a className="text-info" href="/">SMS Terms and Conditions.</a></p>
+        <p>
+          <strong>Consent to Use of Telephone Numbers:</strong> You authorize
+          WebBank, Fingerhut, their affiliates, agents, and others calling at
+          their request or on their behalf to contact you at any number (i) you
+          have provided to us (ii) from which you have called us, or (iii) which
+          we obtain and believe we can reach you at. We may contact you in any
+          way, such as calling, texting, using an automated dialer or using
+          pre-recorded messages. We may contact you on a mobile, wireless, or
+          similar device, even if you are charged for it by your provider.
+          Informational Text Message Disclosures: Fingerhut Account Alerts.
+          Message and data rates may apply. Up to 8 msgs/mo from 40537. Reply
+          STOP to 40537 to cancel. Reply HELP to 40537 for help. Call
+          1-800-208-2500 for support. More Information: See our{" "}
+          <a className="text-info" href="/">
+            Privacy>
+          </a>{" "}
+          Policy and{" "}
+          <a className="text-info" href="/">
+            SMS Terms and Conditions.
+          </a>
+        </p>
       </form>
     </div>
   );
