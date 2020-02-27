@@ -90,6 +90,7 @@
     ;
     grid-template-columns: 1fr;
     justify-items: center;
+    display: flex;
   }
   .cart-image img{
     max-width: 300px;
@@ -109,4 +110,7 @@
   .remove-from-cart {
     width: 300px;
   }
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
 }

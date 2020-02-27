@@ -2,9 +2,15 @@
     height: 500px;
     width: 100%;
     object-fit: cover;
+    transition: transform .8s ease; /* Animation */
 }
+
+.image-container:hover {
+    transform: scale(1.06); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .credit-container {
-    padding: 20px;
+    padding: 20px 0;
     justify-content: center;
 }
 
