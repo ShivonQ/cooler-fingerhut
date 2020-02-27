@@ -1,5 +1,5 @@
 import React from 'react'
-import {bool, func, object} from 'prop-types'
+import { object} from 'prop-types'
 
 import categories from '../../mock-data/categories'
 import './PLP.css'
@@ -35,12 +35,12 @@ class PLP extends React.Component {
 
     const category = categories[categoryId]
 
-    const { inspirations, name, subCategories, title } = category
+    const { inspirations, subCategories, title } = category
 
     const inspirationDisplay = inspirations ? inspirations.map(inspiration => {
       const { image, inspirationTitle, name } = inspiration
       return (
-        <div className="col-sm-4" onClick={(e) => this.handleOnClick(e, name)}>
+        <div key={name} className="col-sm-4" onClick={(e) => this.handleOnClick(e, name)}>
           <img className="plp-image-container" src={image} alt={inspirationTitle}/>
         </div>
       )
@@ -50,7 +50,7 @@ class PLP extends React.Component {
       const { name, title } = subCategory
       const selectedClass = name === selectedCategory ? 'selected' : ''
       return (
-        <div className="col-sm-3" onClick={(e) => this.handleOnClick(e, name)}>
+        <div key={name} className="col-sm-3" onClick={(e) => this.handleOnClick(e, name)}>
           <div className={`card card-body sub-category-card border-dark justify-content-center ${selectedClass}`}>
             <h4>{title}</h4>
           </div>
