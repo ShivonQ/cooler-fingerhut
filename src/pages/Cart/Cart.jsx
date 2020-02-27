@@ -19,6 +19,8 @@ const Cart = ({ cart, removeFromCart }) => {
                 <tr>
                   <th>Image</th>
                   <th>Name</th>
+                  <th>Size</th>
+                  <th>Quantity</th>
                   <th>Price</th>
                   <th />
                 </tr>
@@ -36,6 +38,8 @@ const Cart = ({ cart, removeFromCart }) => {
                     <td>
                       <a href={`/PDP/${item.id}`}>{item.name}</a>
                     </td>
+                    <td>{item.selectedSize}</td>
+                    <td>{item.quantity}</td>
                     <td>{item.price}</td>
                     <td className="remove-from-cart mt-3 col-xs-2">
                       <button

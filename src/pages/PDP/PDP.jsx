@@ -80,9 +80,9 @@ const PDP = ({ match, cart, addToCart }) => {
         </th>
       </div>
       <div className="pdp-price">
-      <div class="pb-2"><h3 class="d-inline">${ppm}</h3><p class="d-inline">per month</p></div>
-  <h5>${price}</h5>
-    </div>
+        <div class="pb-2"><h3 class="d-inline">${ppm}</h3><p class="d-inline">per month</p></div>
+        <h5>${price}</h5>
+      </div>
     </div>
     <div className="pdp-add-to-cart mt-3">
       <button onClick={() => addToCart(createCartProduct())} className="btn btn-primary">Add to Cart</button>
