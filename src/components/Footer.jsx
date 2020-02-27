@@ -1,3 +1,4 @@
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
@@ -58,7 +59,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
+​
           <div className="col-sm-4 col-md-3">
             <h4>
               <strong className="text-light">Customer Service</strong>
@@ -101,12 +102,12 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
+​
           <div className="col-sm-4 col-md-3">
             <h4>
               <strong className="text-light">Payment Options</strong>
             </h4>
-
+​
             <ul className="list-unstyled">
               <li>
                 <a className="text-light" href="#">
@@ -146,7 +147,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
+​
           <div className="col-sm-6 col-md-3">
             <h4 className="text-light">Catalog Search</h4>
           </div>
@@ -154,7 +155,6 @@ const Footer = () => {
       </div>
       <div className="bg-primary text-light p-4">
         <div className="container-fluid">
-          <p>
             <small>
               We have audited this and our other affiliate websites to ensure
               their accessibility. We are committed to maintaining the
@@ -163,18 +163,7 @@ const Footer = () => {
               facilities, privileges, advantages, and accommodations of our
               services through the site. If you have any accessibility questions
               or problems, please contact us at 1-800-208-2500 or
-              customerservice@fingerhut.com for assistance.
-            </small>
-          </p>
-          <div className="disclaimers padding padding-size-lg">
-            <p>
-              <small>
-                Fingerhut Credit Accounts are issued by WebBank, Member FDIC.
-              </small>
-            </p>
-            <p>
-              <small>
-                * <strong>Advertised Price Per Month:</strong> The advertised
+              customerservice@fingerhut.com for assistance. Fingerhut Credit Accounts are issued by WebBank, Member FDIC. * <strong>Advertised Price Per Month:</strong> The advertised
                 price per month is the estimated monthly payment required to be
                 made on your WebBank/Fingerhut Advantage Credit Account for a
                 single item order, or if at any time your account has multiple
@@ -184,27 +173,17 @@ const Footer = () => {
                   href="http://s7d5.scene7.com/s7viewers/html5/BasicZoomViewer.html?closeButton=1&amp;serverUrl=http://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal%5FHTML5%5FZoom%5Flight&amp;contenturl=http://s7d5.scene7.com/skins/&amp;asset=bluestembrands/TCO%20WEB%20TERMS"
                   data-track-id="globalFooter_link"
                   data-track-value="Full Cost of Ownership"
+                  className="text-light"
                 >
                   See Full Cost of Ownership
-                </a>
-                .
-              </small>
-            </p>
-            <p>
-              <small>
-                <sup>◆</sup> Your account minimum payment amount is determined
+                </a> Your account minimum payment amount is determined
                 by the purchases and balances on your WebBank/Fingerhut Credit
                 Account. If you have a balance or are making a multiple item
                 purchase, see the{" "}
-                <a href="http://s7d5.scene7.com/s7viewers/html5/BasicZoomViewer.html?closeButton=1&amp;serverUrl=http://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal%5FHTML5%5FZoom%5Flight&amp;contenturl=http://s7d5.scene7.com/skins/&amp;asset=bluestembrands/TCO%20WEB%20TERMS">
+                <a href="http://s7d5.scene7.com/s7viewers/html5/BasicZoomViewer.html?closeButton=1&amp;serverUrl=http://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal%5FHTML5%5FZoom%5Flight&amp;contenturl=http://s7d5.scene7.com/skins/&amp;asset=bluestembrands/TCO%20WEB%20TERMS"
+                className="text-light">
                   Existing Balance Payment Chart
-                </a>
-                .
-              </small>
-            </p>
-            <p>
-              <small>
-                <sup></sup> Your account minimum payment amount is determined by
+                </a> Your account minimum payment amount is determined by
                 the purchases and balances on your WebBank/Fingerhut Credit
                 Account. The change in minimum payment amount is based on your
                 account balance at the time it is advertised, and includes an
@@ -221,12 +200,12 @@ const Footer = () => {
                 purchase will not reflect on your statement until the order
                 ships. If you have a balance or are making a multiple item
                 purchase, see the{" "}
-                <a href="http://s7d5.scene7.com/s7viewers/html5/BasicZoomViewer.html?closeButton=1&amp;serverUrl=http://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal%5FHTML5%5FZoom%5Flight&amp;contenturl=http://s7d5.scene7.com/skins/&amp;asset=bluestembrands/TCO%20WEB%20TERMS">
+                <a href="http://s7d5.scene7.com/s7viewers/html5/BasicZoomViewer.html?closeButton=1&amp;serverUrl=http://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal%5FHTML5%5FZoom%5Flight&amp;contenturl=http://s7d5.scene7.com/skins/&amp;asset=bluestembrands/TCO%20WEB%20TERMS"
+                className="text-light">
                   Existing Balance Payment Chart
                 </a>
                 .
               </small>
-            </p>
             <small>
               1. If you apply and are accepted for a Fingerhut Credit Account
               issued by WebBank, who determines eligibility and qualifications
@@ -239,12 +218,10 @@ const Footer = () => {
                 href="/content/footer-terms"
                 data-track-id="globalFooter_link"
                 data-track-value="PPM TCs"
+                className="text-light"
               >
                 Terms and Conditions
               </a>
-              .
-            </small>
-            <small className="visible-xs">
               Apple and the Apple logo are trademarks of Apple Inc., registered
               in the U.S. and other countries. App Store is a service mark of
               Apple Inc. Google Play and the Google Play logo are trademarks of
@@ -256,9 +233,8 @@ const Footer = () => {
             </small>
           </div>
         </div>
-      </div>
     </footer>
-  );
-};
-
+  )
+}
+​
 export default Footer;
