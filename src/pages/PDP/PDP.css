@@ -162,4 +162,10 @@
   .pdp-add-to-cart {
     width: 300px;
   }
+  .pdp-size button {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px;
+  }
 }
