@@ -14,6 +14,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import localStorageUtil from "./util/localStorageUtil";
+import Search from './pages/Search/Search'
 
 const App = () => {
   const [cart, setCart] = useState(localStorageUtil.get("cart") || []);
@@ -67,6 +68,7 @@ const App = () => {
           )}
         />
         <Route exact path={"/creditApplication"} render={CreditApplication}/>
+        <Route exact path={"/search"} render={Search}/>
         <Footer />
       </div>
     </Router>
