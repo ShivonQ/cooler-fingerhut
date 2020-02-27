@@ -10,7 +10,7 @@ const BrandsWeLove = () => {
           <a href="/">
             <img
               className="brand-image-container"
-              src="/images/nike_shoes.png"
+              src="/images/nike_logo.png"
               alt="Nike"
             />
           </a>
@@ -19,8 +19,8 @@ const BrandsWeLove = () => {
           <a href="/">
             <img
               className="brand-image-container"
-              src="/images/Mens.png"
-              alt="Apple"
+              src="/images/sorel_logo.png"
+              alt="Sorel"
             />
           </a>
         </div>
@@ -28,8 +28,8 @@ const BrandsWeLove = () => {
           <a href="/">
             <img
               className="brand-image-container"
-              src="https://s7d4.scene7.com/is/image/roomandboard/hartley_948499_18e1_g?hei=725&$str_g$"
-              alt="Second slide"
+              src="/images/apple_logo.png"
+              alt="Apple"
             />
           </a>
         </div>
@@ -37,8 +37,8 @@ const BrandsWeLove = () => {
           <a href="/">
             <img
               className="brand-image-container"
-              src="https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
-              alt="Third slide"
+              src="/images/kitchenaid_logo.png"
+              alt="Kitchen Aid"
             />
           </a>
         </div>
