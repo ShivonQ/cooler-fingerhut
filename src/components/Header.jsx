@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Header = ({ cart }) => {
   return (
     <div>
-      <div className="bg-dark pt-3 pb-1">
+      <div className="bg-dark pt-3 pb-1 fixed-top">
         <p className="text-light text-center d-md-block d-sm-none d-none">
           free shipping on your order of $150 or more | promo code{" "}
           <strong>CMQ69</strong>
