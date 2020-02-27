@@ -49,3 +49,64 @@
 .cart-table tr td:last-child {
   border-right: 0;
 }
+
+/* tablet-only styling */
+@media only screen and (max-width: 1200px) {
+  .pdp-container{
+    grid-template-columns: 300px 1fr 1fr;
+  }
+
+  .pdp-image img{
+    max-width: 300px;
+  }
+
+  .pdp-table {
+    max-width: 300px;
+  }
+}
+
+/* tablet-only styling */
+@media only screen and (max-width: 767px) {
+  .pdp-container{
+    grid-template-columns: 200px 1fr 1fr;
+  }
+
+  .pdp-image img{
+    max-width: 200px;
+  }
+
+  .pdp-table {
+    max-width: 200px;
+  }
+}
+
+/* mobile-only styling */
+@media only screen and (max-width: 600px) {
+  .cart-container {
+    grid-template-areas: "header"
+    "image"
+    "details"
+    "addToCart"
+    ;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .cart-image img{
+    max-width: 300px;
+  }
+  .cart-details {
+    background-color: #F8F8F8;
+    max-width: 300px;
+    text-align: center;
+  }
+  .cart-table {
+    max-width: 300px;
+  }
+  .remove-from-cart button {
+    float: none;
+    width: 100%;
+  }
+  .remove-from-cart {
+    width: 300px;
+  }
+}
