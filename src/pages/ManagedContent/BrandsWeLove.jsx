@@ -3,9 +3,9 @@ import "../Home/home.css";
 
 const BrandsWeLove = () => {
   return (
-    <div >
-      <h2 className="text-center">Brands We Love</h2>
-      <div className="row ml-1 mr-1 mb-4">
+    <div className="mt-5">
+      <h2 className="text-center brands-we-love">Brands We Love</h2>
+      <div className="row ml-1 mr-1">
         <div className="col-md-3 p-0">
           <a href="/">
             <img

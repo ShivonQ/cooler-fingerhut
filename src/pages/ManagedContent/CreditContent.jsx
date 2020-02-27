@@ -41,7 +41,7 @@ const CreditContent = () => {
           />
           <h5 className="d-inline">Trusted brand names</h5>
           <a href="/">
-            <h5 className="pl-2">Apply Now</h5>
+            <h5 className="pt-2 pl-4 text-info">Apply Now</h5>
           </a>
         </div>
       </div>
