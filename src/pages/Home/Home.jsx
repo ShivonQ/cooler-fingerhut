@@ -6,7 +6,7 @@ import BrandsWeLove from "../ManagedContent/BrandsWeLove";
 const Home = () => {
   return (
     <div className="App">
-      <div className="text-center mt-2 mb-2 d-none d-md-none d-lg-block">
+      <div className="text-center mt-4 mb-4 d-none d-md-none d-lg-block">
         <h2 className="d-inline mr-5">
           <a href="/PLP/1">SALE</a>
         </h2>
