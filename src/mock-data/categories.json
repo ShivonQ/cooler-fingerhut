@@ -1,63 +1,161 @@
 {
   "1": {
     "id": "1",
-    "name": "Sale"
+    "title": "Sale"
   },
   "2": {
     "id": "2",
-    "name": "Women",
+    "title": "Women",
     "subCategories": [
       {
-        "name": "Shoes"
+        "name": "womens-shoes",
+        "title": "Shoes"
       },
       {
-        "name": "Clothing"
+        "name": "womens-tops",
+        "title": "Tops"
       },
       {
-        "name": "Handbags"
+        "name": "womens-pants",
+        "title": "Pants"
       },
       {
-        "name": "Accessories"
+        "name": "womens-accessories",
+        "title": "Accessories"
+      }
+    ],
+    "inspirations": [
+      {
+        "inspirationTitle": "TV",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg",
+        "name": "inspiration-womens-1"
+      },
+      {
+        "inspirationTitle": "Smart Home",
+        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2",
+        "name": "inspiration-womens-2"
+      },
+      {
+        "inspirationTitle": "Audio",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413",
+        "name": "inspiration-womens-3"
       }
     ]
   },
   "3": {
     "id": "3",
-    "name": "Men"
+    "title": "Men",
+    "subCategories": [
+      {
+        "name": "mens-shoes",
+        "title": "Shoes"
+      },
+      {
+        "name": "mens-tops",
+        "title": "Tops"
+      },
+      {
+        "name": "mens-pants",
+        "title": "Pants"
+      },
+      {
+        "name": "mens-accesories",
+        "title": "Accessories"
+      }
+    ],
+    "inspirations": [
+      {
+        "inspirationTitle": "TV",
+        "image": "https://images.squarespace-cdn.com/content/v1/5c3fd00cb10598244d51eeaa/1579530599706-MHA6GR0EBIJ0JB1GYLGE/ke17ZwdGBToddI8pDm48kFcjIIX1FKcdO91v_2sr_2x7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USW_WVzW7aVXo2Ry4s1rbuMMhsaMdDaYTr6tab37c5BbKULy2O2411SvyKR8oCtcyw/16_2020_02_FEB_TIER_2_f370.jpg?format=1000w",
+        "name": "inspiration-mens-1"
+      },
+      {
+        "inspirationTitle": "Smart Home",
+        "image": "https://3.bp.blogspot.com/-adMOAMbClBc/W4lHvKGpV8I/AAAAAAABKe4/pMfbasHArqwNmx-nEcfvD6B4XhnG_2WfQCLcBGAs/s1600/camisa-com-bo%25C3%25A3o-aberto%2B%25282%2529.jpg",
+        "name": "inspiration-mens-2"
+      },
+      {
+        "inspirationTitle": "Audio",
+        "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/87157219_2782071041874752_344001849340198912_o.jpg?_nc_cat=111&_nc_sid=9e2e56&_nc_oc=AQmLFQ1o_xL1BMXeofFbf3oULnkg2hGB6AS6cIe2v3Actr5rg6pMcbhEIpRc0_A1PHk&_nc_ht=scontent-iad3-1.xx&oh=838950cee7f0a37b4cbba2903af90115&oe=5EB9D119",
+        "name": "inspiration-mens-3"
+      }
+    ]
   },
   "4": {
     "id": "4",
-    "name": "Home"
+    "title": "Home",
+    "subCategories": [
+      {
+        "name": "home-bedroom",
+        "title": "Bedroom"
+      },
+      {
+        "name": "home-living",
+        "title": "Living"
+      },
+      {
+        "name": "home-dining",
+        "title": "Dining"
+      },
+      {
+        "name": "home-accesories",
+        "title": "Accessories"
+      }
+    ],
+    "inspirations": [
+      {
+        "inspirationTitle": "TV",
+        "image": "https://s7d4.scene7.com/is/image/roomandboard/hartley_948499_18e1_g?hei=725&$str_g$",
+        "name": "inspiration-home-1"
+      },
+      {
+        "inspirationTitle": "Smart Home",
+        "image": "https://d28m5bx785ox17.cloudfront.net/v1/img/q2tWxNRTC-Z32gPGoUdKLQAQfHkQ6eUS-VQdnc27L4c=/d/l",
+        "name": "inspiration-home-2"
+      },
+      {
+        "inspirationTitle": "Audio",
+        "image": "https://d28m5bx785ox17.cloudfront.net/v1/img/RChQvMfML9phs3TIm06DrrfD9-_GO2Un76GNmONoX2k=/d/l",
+        "name": "inspiration-home-3"
+      }
+    ]
   },
   "5": {
     "id": "5",
-    "name": "Electronics",
+    "title": "Electronics",
     "inspirations": [
       {
-        "inspirationName": "TV",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg"
+        "inspirationTitle": "TV",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg",
+        "name": "inspiration-elec-1"
       },
       {
-        "inspirationName": "Smart Home",
-        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2"
+        "inspirationTitle": "Smart Home",
+        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2",
+        "name": "inspiration-elec-2"
       },
       {
-        "inspirationName": "Audio",
-        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413"
+        "inspirationTitle": "Audio",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413",
+        "name": "inspiration-elec-3"
       }
     ],
     "subCategories": [
       {
-        "name": "Tv"
+        "title": "Tv",
+        "name": "elec-tv"
       },
       {
-        "name": "Audio"
+        "title": "Audio",
+        "name": "elec-audio"
       },
       {
-        "name": "Smart Home"
+        "title": "Smart Home",
+        "name": "elec-smart-home"
       },
       {
-        "name": "Computers"
+        "title": "Computers",
+        "name": "elec-computers"
       }
     ]
   }
