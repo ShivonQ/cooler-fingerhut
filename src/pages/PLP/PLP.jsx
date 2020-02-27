@@ -40,7 +40,7 @@ class PLP extends React.Component {
     const inspirationDisplay = inspirations ? inspirations.map(inspiration => {
       const { image, inspirationTitle, name } = inspiration
       return (
-        <div key={name} className="col-sm-4" onClick={(e) => this.handleOnClick(e, name)}>
+        <div key={name} className="col-md-4 pb-3" onClick={(e) => this.handleOnClick(e, name)}>
           <img className="plp-image-container" src={image} alt={inspirationTitle}/>
         </div>
       )
