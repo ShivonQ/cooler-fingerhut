@@ -5,7 +5,6 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Form, FormControl, InputGroup, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-// note: I removed the fixed-top class from the top bar because it was overflowing on mobile -Sean
 const Header = ({ cart }) => {
   return (
     <div>
@@ -23,10 +22,13 @@ const Header = ({ cart }) => {
         <Navbar.Brand href="/">
           <img src="/logo.png" width={75} alt="Cooler Fingerhut" />
         </Navbar.Brand>
+        <Link className="d-lg-none ml-auto pr-5" to="/cart">
+          Cart{cart.length > 0 && <span>&nbsp;&#40;{cart.length}&#41;</span>}
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="text-center">
           <Nav className="mr-auto"></Nav>
-          <Form inline>
+          <Form>
             <InputGroup className="mr-sm-2">
               <FormControl
                 placeholder="Search Products"
@@ -41,9 +43,6 @@ const Header = ({ cart }) => {
             </InputGroup>
           </Form>
           <Nav.Link href="#home">Login</Nav.Link>
-          <Link to="/cart">
-            Cart{cart.length > 0 && <span>&nbsp;&#40;{cart.length}&#41;</span>}
-          </Link>
           <div className="d-lg-none">
             <Nav.Link href="/PLP/1">Sale</Nav.Link>
             <Nav.Link href="/PLP/2">Women</Nav.Link>
@@ -52,6 +51,9 @@ const Header = ({ cart }) => {
             <Nav.Link href="/PLP/5">Electronics</Nav.Link>
           </div>
         </Navbar.Collapse>
+        <Link to="/cart" className="d-none d-lg-block">
+          Cart{cart.length > 0 && <span>&nbsp;&#40;{cart.length}&#41;</span>}
+        </Link>
       </Navbar>
     </div>
   );

@@ -65,14 +65,6 @@ const PDP = ({ match, cart, addToCart }) => {
           <td>{name}</td>
         </tr>
         <tr>
-          <th>Price</th>
-          <td>${price}</td>
-        </tr>
-        <tr>
-          <th>Price Per Month</th>
-          <td>${ppm}</td>
-        </tr>
-        <tr>
           <th>Description</th>
           <td>{description}</td>
         </tr>
@@ -86,6 +78,10 @@ const PDP = ({ match, cart, addToCart }) => {
           {maxQuantity.map(number => <option value={number}>{number}</option>)}
         </select>
         </th>
+      </div>
+      <div className="pdp-price">
+        <div class="pb-2"><h3 class="d-inline">${ppm}</h3><p class="d-inline">per month</p></div>
+        <h5>${price}</h5>
       </div>
     </div>
     <div className="pdp-add-to-cart mt-3">
