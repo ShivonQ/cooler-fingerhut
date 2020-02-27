@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
       <div className="credit-container row">
-        <div className="align-vertical d-inline col-md-5">
+        <div className="col-md-4">
           <h4>Apply Today, Buy Today</h4>
           <div>
             <img
@@ -57,7 +57,7 @@ const Home = () => {
               src="images/checkmark.png"
               alt="credit"
             />
-            <h5 className="d-inline">Build your credit history with us</h5>
+            <h5 className="d-inline">Build your credit with us</h5>
           </div>
           <div>
             <img
@@ -78,7 +78,7 @@ const Home = () => {
             <h5 className="d-inline">Trusted brand names</h5>
           </div>
         </div>
-        <div className="d-inline col-md-3">
+        <div className="col-md-2">
           <img
             className="d-inline"
             height="200px"

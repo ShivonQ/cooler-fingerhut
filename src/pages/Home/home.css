@@ -4,9 +4,6 @@
     object-fit: cover;
 }
 .credit-container {
-    padding: 10px;
-}
-
-.align-vertical {
-    vertical-align: center;
+    padding: 20px;
+    justify-content: center;
 }
