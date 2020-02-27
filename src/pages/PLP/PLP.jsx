@@ -35,7 +35,7 @@ class PLP extends React.Component {
 
     const category = categories[categoryId]
 
-    const { inspirations, subCategories, title } = category
+    const { inspirations, inspirationText, subCategories, title } = category
 
     const inspirationDisplay = inspirations ? inspirations.map(inspiration => {
       const { image, inspirationTitle, name } = inspiration
@@ -70,7 +70,7 @@ class PLP extends React.Component {
             <hr/>
           </div>
           <div className="col-sm-4">
-            <h3 className="text-center">Inspirations</h3>
+            <h3 className="text-center">{inspirationText}</h3>
           </div>
           <div className="col-sm-4">
             <hr/>
