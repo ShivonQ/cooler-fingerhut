@@ -54,6 +54,12 @@
   grid-area: header;
 }
 
+.pdp-price, .pdp-price div {
+  grid-area: details;
+  float: right;
+  margin-right: 10px;
+}
+
 .pdp-add-to-cart {
   grid-area: addToCart;
 }
