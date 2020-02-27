@@ -2,3 +2,8 @@ input {
     border-radius: 5px;
     height: 30px;
 }
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin: 0px 5px 0 0;
+}
