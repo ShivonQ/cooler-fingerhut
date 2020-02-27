@@ -20,17 +20,18 @@ const App = () => {
   const addToCart = item => {
     const localCart = localStorageUtil.get("cart") || [];
 
-    if (localCart.indexOf(item) < 0)
-      localStorageUtil.set("cart", [...cart, item]);
-    if (cart.indexOf(item) < 0) setCart([...cart, item]);
+    console.log('item:', item)
+
+    if (!localCart.filter(cartItem => cartItem.uuid === item.uuid).length) localStorageUtil.set("cart", [...cart, item]);
+    if (!cart.filter(cartItem => cartItem.uuid === item.uuid).length) setCart([...cart, item]);
   };
 
   const removeFromCart = item => {
     localStorageUtil.set(
       "cart",
-      cart.filter(cartItem => cartItem.id !== item.id)
+      cart.filter(cartItem => cartItem.uuid !== item.uuid)
     );
-    setCart(cart.filter(cartItem => cartItem.id !== item.id));
+    setCart(cart.filter(cartItem => cartItem.uuid !== item.uuid));
   };
 
   return (
