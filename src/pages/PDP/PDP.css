@@ -166,6 +166,12 @@
     width: 30px;
     height: 30px;
     display: inline-block;
-    margin: 5px;
+    margin: 20px;
+  }
+  .pdp-size {
+    margin-left: 22px;
+  }
+  .pdp-quantity{
+    margin-left: 22px;
   }
 }
