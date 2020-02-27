@@ -12,6 +12,7 @@ import "bootswatch/dist/lux/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Login from "./pages/Login/Login";
 
 import localStorageUtil from "./util/localStorageUtil";
 import Search from './pages/Search/Search'
@@ -69,6 +70,7 @@ const App = () => {
         />
         <Route exact path={"/creditApplication"} render={CreditApplication}/>
         <Route exact path={"/search"} render={Search}/>
+        <Route exact path={"/login"} render={Login}/>
         <Footer />
       </div>
     </Router>

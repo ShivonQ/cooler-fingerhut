@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Form, FormControl, InputGroup, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Header = ({ cart }) => {
+const Header = ({ cart, isLoggedIn }) => {
   return (
     <div>
       <div className="bg-dark pt-3 pb-1 fixed-top">
@@ -44,7 +44,7 @@ const Header = ({ cart }) => {
               </InputGroup.Prepend>
             </InputGroup>
           </Form>
-          <Nav.Link href="#home">Login</Nav.Link>
+          {isLoggedIn? <Nav.Link href="/login">Account</Nav.Link> : <Nav.Link href="/login">Login</Nav.Link>}
           <div className="d-lg-none">
             <Nav.Link href="/PLP/1">Sale</Nav.Link>
             <Nav.Link href="/PLP/2">Women</Nav.Link>
