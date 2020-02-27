@@ -36,8 +36,10 @@ const Header = ({ cart }) => {
                 aria-describedby="basic-addon1"
               />
               <InputGroup.Prepend>
-                <InputGroup.Text id="basic-addon1">
+                <InputGroup.Text id="basic-addon1" submit>
+                  <Link to="/search">
                   <FontAwesomeIcon icon={faSearch} />
+                  </Link>
                 </InputGroup.Text>
               </InputGroup.Prepend>
             </InputGroup>
