@@ -11,12 +11,14 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
   const [product, setProduct] = useState({})
   const [productInCart, setProductInCart] = useState(false)
 
-  console.log('product:', productId)
+  console.log('product:', product)
 
   const { name = "", category = "", image = "", price = 0, description = "" } = product
 
   useEffect(() => {
+    console.log('productId:', productId)
     const fetchedProduct = api.getProduct(productId)
+    console.log('fetchedProduct:', fetchedProduct)
     setProduct(fetchedProduct)
   }, [])
 
@@ -55,7 +57,7 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
       </table>
     </div>
     <div className="pdp-add-to-cart mt-3">
-      <button disabled={productInCart} onClick={() => addToCart(product)} className="btn btn-primary float-right">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
+      <button disabled={productInCart} onClick={() => addToCart(product)} className="btn btn-primary">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
     </div>
     </div>
   </div>

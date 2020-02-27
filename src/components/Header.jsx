@@ -5,10 +5,11 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Form, FormControl, InputGroup, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+// note: I removed the fixed-top class from the top bar because it was overflowing on mobile -Sean
 const Header = ({ cart }) => {
   return (
     <div>
-      <div className="bg-dark pt-3 pb-1 fixed-top">
+      <div className="bg-dark pt-3 pb-1">
         <p className="text-light text-center d-md-block d-sm-none d-none">
           free shipping on your order of $150 or more | promo code{" "}
           <strong>CMQ69</strong>

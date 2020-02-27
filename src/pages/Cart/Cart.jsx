@@ -26,12 +26,12 @@ const Cart = ({ cart, removeFromCart }) => {
                 <tr key={index} className="product-row">
                   <td>
                     <img
-                      className="product"
+                      className="product-image"
                       alt="large product"
                       src={item.image}
                     />
                   </td>
-                  <td>{item.name}</td>
+                  <td><a href={`/PDP/${item.id}`}>{item.name}</a></td>
                   <td>{item.price}</td>
                   <td>
                     <button
