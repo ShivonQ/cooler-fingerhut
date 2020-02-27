@@ -49,7 +49,7 @@ const PDP = ({ match, cart, addToCart }) => {
         <h1>{name}</h1>
       </div>
     <div className="pdp-image">
-        <img src={image} alt="product image" className="image-responsive" />
+        <img src={image} alt="product" className="image-responsive" />
     </div>
     <div className="pdp-details primary">
       <table className="pdp-table">
