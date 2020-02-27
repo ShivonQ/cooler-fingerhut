@@ -188,23 +188,18 @@
     "inspirations": [
       {
         "inspirationTitle": "Puma",
-        "image": "/images/puma_inspiration.jpeg",
-        "name": "inspiration-brands-1"
+        "image": "/images/puma.jpg",
+        "name": "puma"
       },
       {
         "inspirationTitle": "Sorel",
-        "image": "/images/sorel_inspiration.jpeg",
-        "name": "inspiration-brands-2"
-      },
-      {
-        "inspirationTitle": "Apple",
-        "image": "/images/apple_inspiration.jpeg",
-        "name": "inspiration-brands-3"
+        "image": "/images/sorel.jpg",
+        "name": "sorel"
       },
       {
         "inspirationTitle": "KitchenAid",
-        "image": "/images/kitchenaid_inspiration.jpeg",
-        "name": "inspiration-brands-4"
+        "image": "/images/kitchenaid.jpg",
+        "name": "kitchenaid"
       }
     ]
   }
