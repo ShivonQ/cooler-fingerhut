@@ -16,24 +16,25 @@ const PDP = ({ match, cart, addToCart }) => {
   const { params } = match
   const { productId } = params
   const [product, setProduct] = useState({})
-  const [productInCart, setProductInCart] = useState(false)
-  const [quantity, setQuantity] = useState(0)
+  const [quantity, setQuantity] = useState(1)
 
   const [maxQuantity] = useState(loopTo15())
-  console.log('maxQuantity:', maxQuantity)
 
   const [selectedSize, setSelectedSize] = useState('small')
   const { name = "", ppm = 0, image = "", price = 0, description = "", size = [] } = product
+
+  const createCartProduct = () => {
+    const productForCart = Object.assign(product)
+    productForCart.quantity = quantity
+    productForCart.selectedSize = selectedSize;
+    return productForCart
+  }
 
   useEffect(() => {
     const fetchedProduct = api.getProduct(productId)
     console.log('fetchedProduct:', fetchedProduct)
     setProduct(fetchedProduct)
   }, [])
-
-  useEffect(() => {
-    setProductInCart((cart.filter(item => item.id == product.id).length > 0))
-  }, [cart])
 
   const selectSize = (size) => {
     console.log('size:', size)
@@ -74,14 +75,14 @@ const PDP = ({ match, cart, addToCart }) => {
       </div>
       <div className="pdp-quantity">
         <th>Quantity &nbsp;
-        <select>
+        <select defaultValue={1} onChange={(event) => setQuantity(event.target.value)}>
           {maxQuantity.map(number => <option value={number}>{number}</option>)}
         </select>
         </th>
       </div>
     </div>
     <div className="pdp-add-to-cart mt-3">
-      <button disabled={productInCart} onClick={() => addToCart(product)} className="btn btn-primary">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
+      <button onClick={() => addToCart(createCartProduct())} className="btn btn-primary">Add to Cart</button>
     </div>
     </div>
   </div>

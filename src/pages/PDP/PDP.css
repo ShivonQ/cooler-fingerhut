@@ -112,7 +112,7 @@
   }
 }
 
-/* tablet-only styling */
+/* styling for between 767px-600px */
 @media only screen and (max-width: 767px) {
   .pdp-container{
     grid-template-columns: 200px 1fr 1fr;
