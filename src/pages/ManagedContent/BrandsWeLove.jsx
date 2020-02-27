@@ -7,7 +7,7 @@ const BrandsWeLove = () => {
       <h2 className="text-center brands-we-love">Brands We Love</h2>
       <div className="row ml-1 mr-1">
         <div className="col-md-3 p-0">
-          <a href="/">
+          <a href="/PLP/6">
             <img
               className="brand-image-container"
               src="/images/puma_logo.png"
@@ -16,7 +16,7 @@ const BrandsWeLove = () => {
           </a>
         </div>
         <div className="col-md-3 p-0">
-          <a href="/">
+          <a href="/PLP/6">
             <img
               className="brand-image-container"
               src="/images/sorel_logo.png"
@@ -25,7 +25,7 @@ const BrandsWeLove = () => {
           </a>
         </div>
         <div className="col-md-3 p-0">
-          <a href="/">
+          <a href="/PLP/6">
             <img
               className="brand-image-container"
               src="/images/apple_logo.png"
@@ -34,7 +34,7 @@ const BrandsWeLove = () => {
           </a>
         </div>
         <div className="col-md-3 p-0 mb-2">
-          <a href="/">
+          <a href="/PLP/6">
             <img
               className="brand-image-container"
               src="/images/kitchenaid_logo.png"

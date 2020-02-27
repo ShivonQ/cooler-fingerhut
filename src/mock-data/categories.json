@@ -162,5 +162,50 @@
         "name": "elec-computers"
       }
     ]
+  },
+  "6": {
+    "id": "6",
+    "inspirationText": "Shop by Brand",
+    "title": "Brands We Love",
+    "subCategories": [
+      {
+        "name": "puma",
+        "title": "Puma"
+      },
+      {
+        "name": "sorel",
+        "title": "Sorel"
+      },
+      {
+        "name": "apple",
+        "title": "Apple"
+      },
+      {
+        "name": "kitchen-aid",
+        "title": "KitchenAid"
+      }
+    ],
+    "inspirations": [
+      {
+        "inspirationTitle": "Puma",
+        "image": "/images/puma_inspiration.jpeg",
+        "name": "inspiration-brands-1"
+      },
+      {
+        "inspirationTitle": "Sorel",
+        "image": "/images/sorel_inspiration.jpeg",
+        "name": "inspiration-brands-2"
+      },
+      {
+        "inspirationTitle": "Apple",
+        "image": "/images/apple_inspiration.jpeg",
+        "name": "inspiration-brands-3"
+      },
+      {
+        "inspirationTitle": "KitchenAid",
+        "image": "/images/kitchenaid_inspiration.jpeg",
+        "name": "inspiration-brands-4"
+      }
+    ]
   }
 }

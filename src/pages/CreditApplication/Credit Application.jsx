@@ -9,56 +9,45 @@ const CreditApplication = () => {
       <br />
       <br />
       <form>
-        <p>* indicates a required field.</p>
         <h5>Tell us about yourself</h5>
+        <p>* indicates a required field.</p>
         <br />
-        <h5>* First Name:</h5>
-        <input className="col-sm-8"></input>
+        <h6>* First Name:</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
+        <h6>Middle Name:</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
-        <h5>Middle Name:</h5>
-        <input className="col-sm-8"></input>
+        <h6>* Last Name:</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
+        <h6>Suffix:</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
-        <h5>* Last Name:</h5>
-        <input className="col-sm-8"></input>
+        <h6>* Address Line 1</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
+        <h6>Address Line 2</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
-        <h5>Suffix:</h5>
-        <input className="col-sm-8"></input>
+        <h6>* City</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
+        <h6>* State</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
-        <h5>* Address Line 1</h5>
-        <input className="col-sm-8"></input>
+        <h6>* Zip Code</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
+        <h6>* Primary Phone</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
-        <h5>Address Line 2</h5>
-        <input className="col-sm-8"></input>
-        <input type="checkbox"></input>
-        <br />
-        <br />
-        <h5>* City</h5>
-        <input className="col-sm-8"></input>
-        <br />
-        <br />
-        <h5>* State</h5>
-        <input className="col-sm-8"></input>
-        <br />
-        <br />
-        <h5>* Zip Code</h5>
-        <input className="col-sm-8"></input>
+        <h6>Secondary Phone</h6>
+        <input className="col-sm-8 form-control"></input>
         <br />
         <br />
-        <h5>* Primary Phone</h5>
-        <input className="col-sm-8"></input>
-        <br />
-        <br />
-        <h5>Secondary Phone</h5>
-        <input className="col-sm-8"></input>
-        <br />
-        <br />
-        <input type="checkbox"></input>
         <p>
+        <input type="checkbox"></input>
           <strong>Consent to Use of Telephone Numbers:</strong> You authorize
           WebBank, Fingerhut, their affiliates, agents, and others calling at
           their request or on their behalf to contact you at any number (i) you
@@ -72,7 +61,7 @@ const CreditApplication = () => {
           STOP to 40537 to cancel. Reply HELP to 40537 for help. Call
           1-800-208-2500 for support. More Information: See our{" "}
           <a className="text-info" href="/">
-            Privacy>
+            Privacy
           </a>{" "}
           Policy and{" "}
           <a className="text-info" href="/">
