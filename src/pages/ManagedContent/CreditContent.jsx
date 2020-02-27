@@ -12,7 +12,7 @@ const CreditContent = () => {
           alt="fingerhut card"
         />
       </div>
-      <div className="col-md-4">
+      <div className="col-md-4 mt-4">
         <h4>Apply Today, Buy Today</h4>
         <div>
           <img
