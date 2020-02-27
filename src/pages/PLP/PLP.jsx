@@ -50,9 +50,9 @@ class PLP extends React.Component {
       const { name, title } = subCategory
       const selectedClass = name === selectedCategory ? 'selected' : ''
       return (
-        <div key={name} className="col-sm-3" onClick={(e) => this.handleOnClick(e, name)}>
+        <div key={name} className="col-6 col-lg-3 pb-3" onClick={(e) => this.handleOnClick(e, name)}>
           <div className={`card card-body sub-category-card border-dark justify-content-center ${selectedClass}`}>
-            <h4>{title}</h4>
+            <h4 className="m-0">{title}</h4>
           </div>
         </div>
       )
