@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from 'react'
 import { object, func, arrayOf } from 'prop-types'
-import logo from '../../logo.svg';
 import api from '../../api/api'
 import './PDP.css'
 
-const PDP = ({ match, cart, addToCart, removeFromCart }) => {
+const loopTo15 = () => {
+  const numberArray = []
+  for (let x = 1; x < 16; x++) {
+    numberArray.push(x)
+  }
+  return numberArray
+}
+
+const PDP = ({ match, cart, addToCart }) => {
 
   const { params } = match
   const { productId } = params
   const [product, setProduct] = useState({})
   const [productInCart, setProductInCart] = useState(false)
+  const [quantity, setQuantity] = useState(0)
 
-  console.log('product:', product)
+  const [maxQuantity] = useState(loopTo15())
+  console.log('maxQuantity:', maxQuantity)
 
-  const { name = "", category = "", image = "", price = 0, description = "" } = product
+  const [selectedSize, setSelectedSize] = useState('small')
+  const { name = "", ppm = 0, image = "", price = 0, description = "", size = [] } = product
 
   useEffect(() => {
-    console.log('productId:', productId)
     const fetchedProduct = api.getProduct(productId)
     console.log('fetchedProduct:', fetchedProduct)
     setProduct(fetchedProduct)
@@ -26,6 +35,11 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
     setProductInCart((cart.filter(item => item.id == product.id).length > 0))
   }, [cart])
 
+  const selectSize = (size) => {
+    console.log('size:', size)
+    setSelectedSize(size)
+  }
+
 
   return (
   <div className="container">
@@ -34,7 +48,7 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
         <h1>{name}</h1>
       </div>
     <div className="pdp-image">
-        <img src={image} alt="product image" />
+        <img src={image} alt="product image" className="image-responsive" />
     </div>
     <div className="pdp-details primary">
       <table className="pdp-table">
@@ -43,18 +57,28 @@ const PDP = ({ match, cart, addToCart, removeFromCart }) => {
           <td>{name}</td>
         </tr>
         <tr>
-          <th>Category</th>
-          <td>{category}</td>
+          <th>Price</th>
+          <td>${price}</td>
         </tr>
         <tr>
-          <th>Price</th>
-          <td>{price}</td>
+          <th>Price Per Month</th>
+          <td>${ppm}</td>
         </tr>
         <tr>
           <th>Description</th>
           <td>{description}</td>
         </tr>
       </table>
+      <div className="pdp-size">
+        <th>SIZE {size.length ? size.map(itemSize => <button onClick={() => selectSize(itemSize)} className={`${selectedSize === itemSize ? 'selected-size' : ''} text-center`}>{itemSize[0].toUpperCase()}</button>) : ''}</th>
+      </div>
+      <div className="pdp-quantity">
+        <th>Quantity &nbsp;
+        <select>
+          {maxQuantity.map(number => <option value={number}>{number}</option>)}
+        </select>
+        </th>
+      </div>
     </div>
     <div className="pdp-add-to-cart mt-3">
       <button disabled={productInCart} onClick={() => addToCart(product)} className="btn btn-primary">{productInCart ? 'Product in Cart' : 'Add to Cart'}</button>
@@ -69,7 +93,6 @@ PDP.propTypes = {
   addToCart: func.isRequired,
   cart: arrayOf(object),
   match: object.isRequired,
-  removeFromCart: func.isRequired,
 }
 
 PDP.defaultProps = {
