@@ -19,7 +19,7 @@ const Home = () => {
         <h2 className="d-inline mr-5">
           <a href="/PLP/4">HOME</a>
         </h2>
-        <h2 className="d-inline mr-5">
+        <h2 className="d-inline">
           <a href="/PLP/5">ELECTRONICS</a>
         </h2>
       </div>
