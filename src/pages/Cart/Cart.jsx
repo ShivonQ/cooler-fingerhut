@@ -2,6 +2,7 @@ import React from "react";
 import { arrayOf, object, func } from "prop-types";
 import "./Cart.css";
 const Cart = ({ cart, removeFromCart }) => {
+  console.log('cart:', cart)
   return (
     <div className="container">
       <div className="cart-header text-center">
