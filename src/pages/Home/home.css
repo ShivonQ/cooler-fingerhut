@@ -7,3 +7,9 @@
     padding: 20px;
     justify-content: center;
 }
+
+.brand-image-container {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import "./home.css";
+import CreditContent from '../ManagedContent/CreditContent'
+import BrandsWeLove from "../ManagedContent/BrandsWeLove";
 
 const Home = () => {
   return (
@@ -59,46 +61,8 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="credit-container row">
-        <div className="col-md-4">
-          <h4>Apply Today, Buy Today</h4>
-          <div>
-            <img
-              className="d-inline pr-1"
-              width="20"
-              src="images/checkmark.png"
-              alt="credit"
-            />
-            <h5 className="d-inline">Build your credit with us</h5>
-          </div>
-          <div>
-            <img
-              className="d-inline pr-1"
-              width="20"
-              src="images/checkmark.png"
-              alt="credit"
-            />
-            <h5 className="d-inline">Low monthly payments</h5>
-          </div>
-          <div>
-            <img
-              className="d-inline pr-1"
-              width="20"
-              src="images/checkmark.png"
-              alt="credit"
-            />
-            <h5 className="d-inline">Trusted brand names</h5>
-          </div>
-        </div>
-        <div className="col-md-2">
-          <img
-            className="d-inline"
-            height="200px"
-            src="https://www.fingerhut.com/assets/f/test/card-img-visa-both.png"
-            alt="fingerhut card"
-          />
-        </div>
-      </div>
+      <CreditContent />
+      <BrandsWeLove />
     </div>
   );
 };
