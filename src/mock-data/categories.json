@@ -1,63 +1,70 @@
 {
   "1": {
     "id": "1",
-    "name": "Sale"
+    "title": "Sale"
   },
   "2": {
     "id": "2",
-    "name": "Women",
+    "title": "Women",
     "subCategories": [
       {
-        "name": "Shoes"
+        "title": "Shoes"
       },
       {
-        "name": "Clothing"
+        "title": "Clothing"
       },
       {
-        "name": "Handbags"
+        "title": "Handbags"
       },
       {
-        "name": "Accessories"
+        "title": "Accessories"
       }
     ]
   },
   "3": {
     "id": "3",
-    "name": "Men"
+    "title": "Men"
   },
   "4": {
     "id": "4",
-    "name": "Home"
+    "title": "Home"
   },
   "5": {
     "id": "5",
-    "name": "Electronics",
+    "title": "Electronics",
     "inspirations": [
       {
-        "inspirationName": "TV",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg"
+        "inspirationTitle": "TV",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81IppynsTxL._AC_SL1500_.jpg",
+        "name": "inspiration-elec-1"
       },
       {
-        "inspirationName": "Smart Home",
-        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2"
+        "inspirationTitle": "Smart Home",
+        "image": "https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Home/07July/CR-Home-InlineHero-Best-Amazon-Prime-Home-Deals-07-19-v2",
+        "name": "inspiration-elec-2"
       },
       {
-        "inspirationName": "Audio",
-        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413"
+        "inspirationTitle": "Audio",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/11/2017/10/woman-wearing-headphones-cba642b.jpeg?webp=true&quality=90&crop=3px%2C0px%2C1019px%2C679px&resize=620%2C413",
+        "name": "inspiration-elec-3"
       }
     ],
     "subCategories": [
       {
-        "name": "Tv"
+        "title": "Tv",
+        "name": "elec-tv"
       },
       {
-        "name": "Audio"
+        "title": "Audio",
+        "name": "elec-audio"
       },
       {
-        "name": "Smart Home"
+        "title": "Smart Home",
+        "name": "elec-smart-home"
       },
       {
-        "name": "Computers"
+        "title": "Computers",
+        "name": "elec-computers"
       }
     ]
   }

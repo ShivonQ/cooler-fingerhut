@@ -8,3 +8,18 @@
     text-align: center;
     height: 150px;
 }
+
+.sub-category-card:hover,
+.sub-category-card.selected {
+    background-color: var(--dark);
+    cursor: pointer;
+}
+
+.sub-category-card:hover h4,
+.sub-category-card.selected h4 {
+    color: var(--light);
+}
+
+.products-container {
+    scroll-margin: 100px;
+}
