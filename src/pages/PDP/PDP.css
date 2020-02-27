@@ -12,11 +12,6 @@
   
 }
 
-.selected-size {
-  background-color: black;
-  color: white;
-}
-
 .pdp-size {
   margin-left: 35px;
 }
@@ -26,6 +21,11 @@
   height: 50px;
   display: inline-block;
   margin: 10px;
+  background-color: white;
+}
+.pdp-size .selected-size {
+  background-color: black;
+  color: white;
 }
 
 .pdp-quantity {
