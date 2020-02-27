@@ -50,7 +50,11 @@ const App = () => {
             />
           )}
         />
-        <Route component={PLP} exact path={`/PLP/:categoryId`} />
+        <Route
+          render={props => <PLP {...props} addToCart={addToCart} cart={cart}/>}
+          exact
+          path={`/PLP/:categoryId`}
+        />
         <Route
           exact
           path={`/cart`}

@@ -10,8 +10,8 @@ const BrandsWeLove = () => {
           <a href="/">
             <img
               className="brand-image-container"
-              src="/images/nike_logo.png"
-              alt="Nike"
+              src="/images/puma_logo.png"
+              alt="Puma"
             />
           </a>
         </div>

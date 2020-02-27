@@ -1,5 +1,5 @@
 import React from 'react'
-import { object} from 'prop-types'
+import { object, func, arrayOf} from 'prop-types'
 
 import categories from '../../mock-data/categories'
 import './PLP.css'
@@ -30,8 +30,11 @@ class PLP extends React.Component {
   render() {
     const { match } = this.props
     const { selectedCategory } = this.state
+    const { addToCart } = this.props
+    const { cart } = this.props
     const { params } = match
     const { categoryId } = params
+
 
     const category = categories[categoryId]
 
@@ -82,7 +85,7 @@ class PLP extends React.Component {
         </div>
 
         <div ref={this.myDivToFocus} className="products-container">
-          <Products selectedCategory={selectedCategory} />
+          <Products selectedCategory={selectedCategory} cart={cart} addToCart={addToCart}/>
         </div>
 
       </div>
@@ -92,6 +95,9 @@ class PLP extends React.Component {
 
 PLP.propTypes = {
   match: object.isRequired,
+  addToCart: func.isRequired,
+  cart: arrayOf(object),
+
 }
 
 export default PLP
