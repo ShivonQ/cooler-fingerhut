@@ -23,6 +23,7 @@
 
 .cart-table {
   border-collapse: collapse;
+  width: 100%;
 }
 .cart-table thead tr th {
   border: 1px solid rgb(169, 169, 169, .2);

@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import PDP from "./pages/PDP/PDP";
 import PLP from "./pages/PLP/PLP";
 import Cart from "./pages/Cart/Cart";
+import CreditApplication from "./pages/CreditApplication/Credit Application";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import "bootswatch/dist/lux/bootstrap.min.css";
@@ -20,10 +21,12 @@ const App = () => {
   const addToCart = item => {
     const localCart = localStorageUtil.get("cart") || [];
 
-    console.log('item:', item)
+    console.log("item:", item);
 
-    if (!localCart.filter(cartItem => cartItem.uuid === item.uuid).length) localStorageUtil.set("cart", [...cart, item]);
-    if (!cart.filter(cartItem => cartItem.uuid === item.uuid).length) setCart([...cart, item]);
+    if (!localCart.filter(cartItem => cartItem.uuid === item.uuid).length)
+      localStorageUtil.set("cart", [...cart, item]);
+    if (!cart.filter(cartItem => cartItem.uuid === item.uuid).length)
+      setCart([...cart, item]);
   };
 
   const removeFromCart = item => {
@@ -52,7 +55,7 @@ const App = () => {
           )}
         />
         <Route
-          render={props => <PLP {...props} addToCart={addToCart} cart={cart}/>}
+          render={props => <PLP {...props} addToCart={addToCart} cart={cart} />}
           exact
           path={`/PLP/:categoryId`}
         />
@@ -63,6 +66,7 @@ const App = () => {
             <Cart {...props} removeFromCart={removeFromCart} cart={cart} />
           )}
         />
+        <Route exact path={"/creditApplication"} render={CreditApplication}/>
         <Footer />
       </div>
     </Router>
