@@ -99,11 +99,6 @@ const Footer = () => {
                   Request A Catalog
                 </a>
               </li>
-              <li>
-                <a className="text-light" href="#">
-                  View All Products
-                </a>
-              </li>
             </ul>
           </div>
 

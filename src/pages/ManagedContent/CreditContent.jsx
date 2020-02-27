@@ -8,7 +8,7 @@ const CreditContent = () => {
         <img
           className="d-inline"
           height="200px"
-          src="https://www.fingerhut.com/assets/f/test/card-img-visa-both.png"
+          src="https://www.fingerhut.com/assets/f/test/card-prototype.png"
           alt="fingerhut card"
         />
       </div>

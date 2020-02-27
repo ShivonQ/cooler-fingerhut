@@ -1,5 +1,5 @@
 import React from 'react'
-import { object} from 'prop-types'
+import { object, func, arrayOf} from 'prop-types'
 
 import categories from '../../mock-data/categories'
 import './PLP.css'
@@ -30,8 +30,11 @@ class PLP extends React.Component {
   render() {
     const { match } = this.props
     const { selectedCategory } = this.state
+    const { addToCart } = this.props
+    const { cart } = this.props
     const { params } = match
     const { categoryId } = params
+
 
     const category = categories[categoryId]
 
@@ -40,7 +43,7 @@ class PLP extends React.Component {
     const inspirationDisplay = inspirations ? inspirations.map(inspiration => {
       const { image, inspirationTitle, name } = inspiration
       return (
-        <div key={name} className="col-sm-4" onClick={(e) => this.handleOnClick(e, name)}>
+        <div key={name} className="col-md-4 pb-3" onClick={(e) => this.handleOnClick(e, name)}>
           <img className="plp-image-container" src={image} alt={inspirationTitle}/>
         </div>
       )
@@ -50,9 +53,9 @@ class PLP extends React.Component {
       const { name, title } = subCategory
       const selectedClass = name === selectedCategory ? 'selected' : ''
       return (
-        <div key={name} className="col-sm-3" onClick={(e) => this.handleOnClick(e, name)}>
+        <div key={name} className="col-6 col-lg-3 pb-3" onClick={(e) => this.handleOnClick(e, name)}>
           <div className={`card card-body sub-category-card border-dark justify-content-center ${selectedClass}`}>
-            <h4>{title}</h4>
+            <h4 className="m-0">{title}</h4>
           </div>
         </div>
       )
@@ -82,7 +85,7 @@ class PLP extends React.Component {
         </div>
 
         <div ref={this.myDivToFocus} className="products-container">
-          <Products selectedCategory={selectedCategory} />
+          <Products selectedCategory={selectedCategory} cart={cart} addToCart={addToCart}/>
         </div>
 
       </div>
@@ -92,6 +95,9 @@ class PLP extends React.Component {
 
 PLP.propTypes = {
   match: object.isRequired,
+  addToCart: func.isRequired,
+  cart: arrayOf(object),
+
 }
 
 export default PLP
