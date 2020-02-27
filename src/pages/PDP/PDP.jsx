@@ -24,9 +24,16 @@ const PDP = ({ match, cart, addToCart }) => {
   const { name = "", ppm = 0, image = "", price = 0, description = "", size = [] } = product
 
   const createCartProduct = () => {
-    const productForCart = Object.assign(product)
+    const productForCart = {}
+    productForCart.id = product.id
+    productForCart.image = image
+    productForCart.name = name
+    productForCart.ppm = ppm
+    productForCart.price = price
+    productForCart.category = product.category
     productForCart.quantity = quantity
     productForCart.selectedSize = selectedSize;
+    productForCart.uuid = productForCart.id + productForCart.selectedSize
     return productForCart
   }
 
